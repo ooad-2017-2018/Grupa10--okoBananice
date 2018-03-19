@@ -1,9 +1,9 @@
 # Grupa10--CokoBananice
 # Pošta
 Clanovi tima:
-	1. Selma Vucijak
-	2. Faruk Smajlovic
-	3. Ilma Spahic
+1. Selma Vucijak
+2. Faruk Smajlovic
+3. Ilma Spahic
 ## Opis teme
 Pošta je ustanova u kojoj se stvaraju velike gužve zbog mnogo interakcije sa ljudima. Upravo zbog toga smo osmislili softversko rješenje koje ce simulirati njen rad, prije svega da bi se olakšala organizacija i ubrzale njene funkcionalnosti.
 
