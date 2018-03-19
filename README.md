@@ -1,1 +1,1 @@
-# **_Grupa10_--CokoBananice**
+# Grupa10--CokoBananice
