@@ -50,16 +50,16 @@ Potrošaè prilikom slanja paketa, dobija šifru od uposlenika pomoæu koje može vid
 
 ## Akteri
 
-###### 1. Potrošaèi
+#### 1. Potrošaèi
 Koriste usluge pošte. Omoguæeno im je da se registruju i prijave na sistem, plaæaju svoje raèune, kupuju razglednice i markice, šalju i prate pakete. Svaki potrošaè posjeduje karticu Pošte koja mu služi za naplatu.
 
-###### 2. Uposlenici
+#### 2. Uposlenici
 
 * Osoba za šalterom - Ljudi koji rade u pošti i vrše interakciju sa potrošaèima. Upravljaju zahtjevima za slanje paketa, naplaæuju raèune te potrošaèu mijenaju stanje naplaæenog raèuna. Takoðer, uposlenici su zaduženi za registraciju novih potrošaèa.
 * Poštar - vidi informacije o svim paketima, može provjeriti u kojem su stanju (vrijeme registracije, negdje u putu, došao da primaoca). Cim je novi paket registrovan, i poštaru se pojavi na aplikaciji.
 
-###### 3. Administrator
+#### 3. Administrator
 Nadgleda operacije koje se odvijaju u pošti. Zadužen je za registraciju novih uposlenika koja ukljuèuje dodjeljivanje privilegija. Mjeseèno ažurira raèune potrošaèima i reguliše zahtjeve za poveæanjem sredstava na kartici.
 
-###### 4. Sistem za naplatu
+#### 4. Sistem za naplatu
 Pri plaæanju raèuna, kupovine, slanja paketa, sistem za naplatu automatski potrošaèu smanjuje odreðeni iznos sa kartice. U sluèaju da potrošaè nema dovoljno stanja, sistem æe dati grešku te onemoguæiti završetak procesa naplate, dok se sredstva ne obezbijede. 
