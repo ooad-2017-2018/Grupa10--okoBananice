@@ -58,6 +58,11 @@ Ljudi koji rade u pošti i vrše interakciju sa potrošaèima. Upravljaju zahtjevima
 ###### 3. Poštari
 Poštar vidi informacije o svim paketima, može provjeriti u kojem su stanju (vrijeme registracije, negdje u putu, došao da primaoca). Cim uposlenik registruje paket i poštaru se pojavi na aplikaciji.
 
+###### 4. Globalni administrator
+Nadgleda operacije koje se odvijaju u pošti. Zadužen je za verifikaciju novih korisnika (potrošaèa i uposlenika) koja ukljuèuje dodjeljivanje privilegija. Mjeseèno ažurira raèune potrošaèima.
+
+###### 5. Sistem za naplatu
+Pri plaæanju raèuna, kupovine, slanja paketa, sistem za naplatu automatski potrošaèu smanjuje odreðeni iznos sa kartice. U sluèaju da potrošaè nema dovoljno stanja, sistem æe dati grešku te onemoguæiti završetak procesa naplate, dok se sredstva ne obezbijede.
 
 
  
