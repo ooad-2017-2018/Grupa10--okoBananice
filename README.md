@@ -6,8 +6,10 @@ Clanovi tima:
 3. Ilma Spahiæ
 
 ## Opis teme
-Pošta je ustanova u kojoj se stvaraju velike gužve zbog mnogo interakcije sa ljudima. Upravo zbog toga smo osmislili softversko rješenje koje æe simulirati njen rad, prije svega da bi se olakšala organizacija i ubrzale njene funkcionalnosti.
+Pošta je ustanova u kojoj se stvaraju velike gužve zbog mnogo interakcije sa ljudima. Zbog toga smo osmislili softversko rješenje koje æe simulirati njen rad, prije svega da bi se olakšala organizacija i ubrzale njene funkcionalnosti, ali i da bi smo modernizovali njene usluge i bili u korak sa vremenom.
+Kako bi se to ostvarilo potrebna je aplikacija koja æe istovremeno biti efikasna i jednostavna za korištenje. Cilj je olakšati potrošaèima plaæanje raèuna, slanje paketa, te kupovinu razglednica i markica. Poštarima æe sve informacije o paketima i ostaloj pošti biti na dohvat ruke, što æe im uveliko olakšati i ubrzati posao. 
 
+/*
 Potrošaèu je omoguæena registracija i login na sistem. Od ponuðenih opcija, može provjeriti stanje svojih raèuna, izmiriti dugove i pratiti trenutnu lokaciju paketa.
 Takoðer, ponuðen im je odabir i kupovina razglednica i markica, koje potom dolaze na njihovu adresu.
 
@@ -15,7 +17,7 @@ S druge strane, uposlenik pošte unosi zahtjev za slanje paketa u sistem, te poši
 Dalje, uposlenik je u moguænosti registrovati raèun koji potrošaè plaæa, a zatim mijenja stanje na "plaæen". Ako ga potrošaè plati kroz aplikaciju, stanje mu se automatski promijeni.
  
 Poštar vidi informacije o svim paketima, može provjeriti u kojem su stanju (tek registrovan, negdje u putu, došao da primaoca). Cim uposlenik registruje paket i poštaru se pojavi na aplikaciji.
-
+*/
 ## Procesi
 
 ###### REGISTRACIJA I LOGIN U SISTEM
