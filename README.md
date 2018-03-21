@@ -22,19 +22,25 @@ Poštar vidi informacije o svim paketima, može provjeriti u kojem su stanju (tek 
 
 ###### REGISTRACIJA I LOGIN U SISTEM
 
-Registracija se vrši upisom podataka u formu (ime, prezime, datum roðenja, JMBG, lozinka, email, broj telefona, adresa stanovanja, ID i stanje kartice), meðutim korisnik se ne može prijaviti dok ga ne verificira administrator. On dobija email za zahtjev registracije korisnika, te vrši verifikaciju i dodjeljivanje nivoa pristupa korisniku.
-Verifikovani korisnik se prijavljuje na sistem unošenjem svog emaila i lozinke u formi za prijavu.
+Moguæa je registracija novih potrošaèa i uposlenika. Medutim, samo Administrator Pošte može registrovati novog uposlenika, a uposlenici mogu registrovati nove potrošaèe. Registracija se obavlja unošenjem liènih podataka u formu (ime, prezime, datum roðenja, JMBG, lozinka, email, broj telefona, adresa stanovanja). Pri registraciji potrošaèa, dodjeljuje mu se ID kartice Pošte, koja sadrži odreðeni poèetni iznos novca.
+Registrovani korisnik se prijavljuje na sistem unošenjem svog emaila i lozinke u formi za prijavu.
 
 ###### POSTAVLJANJE RACUNA
 Administrator mjeseèno ažurira raèune koje potrošaèi trebaju platiti što se potom njima pojavljuje na aplikaciji. 
 
 ###### PLACANJE RACUNA
 Potrošaè raèune može plaæati na dva naèina: preko aplikacije ili odlaskom u poštu. 
-Ukoliko se potrošaè odluèi za plaæanje raèuna preko aplikacije, ponuðeno mu je da klikom na dugme izabere raèun koji želi da plati, nakon èega sistem za naplatu vrši obraèun te skida odreðeni iznos sa kartice. U sluèaju da potrošaè nema dovoljno sredstava, sistem æe ga obavijestiti o tome.
-Plaæanjem raèuna u pošti, uposlenik mijenja stanje raèuna potrošaèa.
+Ukoliko se potrošaè odluèi za plaæanje raèuna preko aplikacije, ponuðeno mu je da klikom na dugme izabere raèun koji želi da plati.
+Plaæanjem raèuna u pošti, uposlenik mijenja stanje raèuna potrošaèa. 
+
+###### NAPLACIVANJE
+Pri svakoj kupovini ili plaæanju raèuna potrebno je umanjiti iznos na kartici Pošte, a to automatski radi sistem za naplatu. U sluèaju da potrošaè na kartici nema dovoljno sredstava, sistem æe ga obavijestiti o tome.
+
+###### POVECANJE SREDSTAVA
+U sluèaju da potrošaè želi poveæati iznos novca na svojoj kartici, dužan je poslati zahtjev za poveæanjem sredstava kojeg potom odobrava administrator Pošte. 
 
 ###### SLANJE PAKETA
-Uposlenik prilikom prijema paketa za slanje, registuje paket upisivanjem podataka u formu, gdje se automatski na osnovu težine paketa i tipa, odreðuje poštarina i ukupna cijena paketa.
+Uposlenik prilikom prijema paketa za slanje registuje paket upisivanjem podataka u formu, gdje se automatski na osnovu težine paketa i tipa, odreðuje poštarina i ukupna cijena paketa.
 Potrošaè prilikom slanja paketa, dobija šifru od uposlenika pomoæu koje može vidjeti trenutnu lokaciju paketa.
 
 ## Funkcionalnosti
