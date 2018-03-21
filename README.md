@@ -47,6 +47,16 @@ Potrošaè prilikom slanja paketa, dobija šifru od uposlenika pomoæu koje može vid
 * Moguænost obraèuna poštarine i ukupne cijene paketa
 * Moguænost verifikacije novih korisnika sistema
 
+## Akteri
+
+###### 1. Potrošaèi
+Koriste usluge pošte. Omoguæeno im je da se registruju i prijave na sistem, plaæaju svoje raèune, kupuju razglednice i markice, šalju i prate pakete. Svaki potrošaè, pri registraciji, osim liènih podataka upisuje i ID kartice Pošte koja æe mu služiti za naplatu, a takoðer je potrebno unijeti i poèetno stanje koje æe se smanjivati.
+
+###### 2. Uposlenici 
+Ljudi koji rade u pošti i vrše interakciju sa potrošaèima. Upravljaju zahtjevima za slanje paketa, naplaæuju raèune te potrošaèu mijenaju stanje naplaæenog raèuna.
+
+###### 3. Poštari
+Poštar vidi informacije o svim paketima, može provjeriti u kojem su stanju (vrijeme registracije, negdje u putu, došao da primaoca). Cim uposlenik registruje paket i poštaru se pojavi na aplikaciji.
 
 
 
