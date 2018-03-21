@@ -14,7 +14,7 @@ Uposlenicima æe rad biti automatizovan što æe smanjiti moguænost greške.
 
 ###### REGISTRACIJA I LOGIN U SISTEM
 
-Moguæa je registracija novih potrošaèa i uposlenika. Medutim, samo Administrator Pošte može registrovati novog uposlenika, a uposlenici mogu registrovati nove potrošaèe. Registracija se obavlja unošenjem liènih podataka u formu (ime, prezime, datum roðenja, JMBG, lozinka, email, broj telefona, adresa stanovanja). Pri registraciji potrošaèa, dodjeljuje mu se ID kartice Pošte, koja sadrži odreðeni poèetni iznos novca.
+Moguæa je registracija novih potrošaèa i uposlenika. Medutim, samo Administrator Pošte može registrovati novog uposlenika, a uposlenici (osobe koje rade za šalterom) mogu registrovati nove potrošaèe. Registracija se obavlja unošenjem liènih podataka u formu (ime, prezime, datum roðenja, JMBG, lozinka, email, broj telefona, adresa stanovanja). Pri registraciji potrošaèa, dodjeljuje mu se ID kartice Pošte, koja sadrži odreðeni poèetni iznos novca.
 Registrovani korisnik se prijavljuje na sistem unošenjem svog emaila i lozinke u formi za prijavu.
 
 ###### POSTAVLJANJE RACUNA
@@ -37,32 +37,29 @@ Potrošaè prilikom slanja paketa, dobija šifru od uposlenika pomoæu koje može vid
 
 ## Funkcionalnosti
 
-* Moguænost registracije i prijave na sistem
+* Moguænost prijave na sistem
+* Moguænost registracije novih korisnika sistema
 * Moguænost kupovine razglednica i markica
 * Moguænost plaæanja raèuna
 * Moguænost pregleda stanja raèuna
 * Moguænost praæenja lokacije paketa
 * Moguænost podnošenja zahtjeva za slanje paketa
+* Moguænost podnošenja zahtjeva za poveæanje stanja na kartici
 * Moguænost pregleda svih informacija o paketu
 * Moguænost obraèuna poštarine i ukupne cijene paketa
-* Moguænost verifikacije novih korisnika sistema
 
 ## Akteri
 
 ###### 1. Potrošaèi
-Koriste usluge pošte. Omoguæeno im je da se registruju i prijave na sistem, plaæaju svoje raèune, kupuju razglednice i markice, šalju i prate pakete. Svaki potrošaè, pri registraciji, osim liènih podataka upisuje i ID kartice Pošte koja æe mu služiti za naplatu, a takoðer je potrebno unijeti i poèetno stanje koje æe se smanjivati.
+Koriste usluge pošte. Omoguæeno im je da se registruju i prijave na sistem, plaæaju svoje raèune, kupuju razglednice i markice, šalju i prate pakete. Svaki potrošaè posjeduje karticu Pošte koja mu služi za naplatu.
 
-###### 2. Uposlenici 
-Ljudi koji rade u pošti i vrše interakciju sa potrošaèima. Upravljaju zahtjevima za slanje paketa, naplaæuju raèune te potrošaèu mijenaju stanje naplaæenog raèuna.
+###### 2. Uposlenici
 
-###### 3. Poštari
-Poštar vidi informacije o svim paketima, može provjeriti u kojem su stanju (vrijeme registracije, negdje u putu, došao da primaoca). Cim uposlenik registruje paket i poštaru se pojavi na aplikaciji.
+      * Osoba za šalterom - Ljudi koji rade u pošti i vrše interakciju sa potrošaèima. Upravljaju zahtjevima za slanje paketa, naplaæuju raèune te potrošaèu mijenaju stanje naplaæenog raèuna. Takoðer, uposlenici su zaduženi za registraciju novih potrošaèa.
+      * Poštar - vidi informacije o svim paketima, može provjeriti u kojem su stanju (vrijeme registracije, negdje u putu, došao da primaoca). Cim je novi paket registrovan, i poštaru se pojavi na aplikaciji.
 
-###### 4. Globalni administrator
-Nadgleda operacije koje se odvijaju u pošti. Zadužen je za verifikaciju novih korisnika (potrošaèa i uposlenika) koja ukljuèuje dodjeljivanje privilegija. Mjeseèno ažurira raèune potrošaèima.
+###### 4. Administrator
+Nadgleda operacije koje se odvijaju u pošti. Zadužen je za registraciju novih uposlenika koja ukljuèuje dodjeljivanje privilegija. Mjeseèno ažurira raèune potrošaèima i reguliše zahtjeve za poveæanjem sredstava na kartici.
 
 ###### 5. Sistem za naplatu
-Pri plaæanju raèuna, kupovine, slanja paketa, sistem za naplatu automatski potrošaèu smanjuje odreðeni iznos sa kartice. U sluèaju da potrošaè nema dovoljno stanja, sistem æe dati grešku te onemoguæiti završetak procesa naplate, dok se sredstva ne obezbijede.
-
-
- 
+Pri plaæanju raèuna, kupovine, slanja paketa, sistem za naplatu automatski potrošaèu smanjuje odreðeni iznos sa kartice. U sluèaju da potrošaè nema dovoljno stanja, sistem æe dati grešku te onemoguæiti završetak procesa naplate, dok se sredstva ne obezbijede. 
