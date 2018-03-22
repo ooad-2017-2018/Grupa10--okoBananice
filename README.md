@@ -1,4 +1,4 @@
-# Grupa10--CokoBananice
+# Grupa10-CokoBananice
 # Pošta
 Clanovi tima:
 1. Selma Vuèijak
