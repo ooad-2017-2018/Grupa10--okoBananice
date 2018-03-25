@@ -24,10 +24,6 @@ Administrator sistema nadgleda rad sistema, prati zloupotrebu sistema, te eventu
 
 Prilikom prijave na sistem, potrošaè æe biti obaviješten putem "Messageboxa" o novim raèunima koje treba platiti. Potrošaè plaæa raèune odlaskom na poštu.
 
-###### NAPLACIVANJE
-
-
-
 
 ###### SLANJE PAKETA
 Uposlenik prilikom prijema paketa za slanje registuje paket upisivanjem podataka u formu, gdje se automatski na osnovu težine paketa i tipa, odreðuje poštarina i ukupna cijena paketa.
