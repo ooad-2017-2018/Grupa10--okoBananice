@@ -59,5 +59,3 @@ Koriste usluge pošte. Omoguæeno im je da se registruju i prijave na sistem, plaæ
 #### 3. Administrator
 Nadgleda operacije koje se odvijaju u pošti. Zadužen je za praæenje zloupotrebe sistema.
 
-#### 4. Sistem za naplatu
-Pri plaæanju raèuna, kupovine, slanja paketa, sistem za naplatu izdaje potrošaèu raèun koji treba platiti.
