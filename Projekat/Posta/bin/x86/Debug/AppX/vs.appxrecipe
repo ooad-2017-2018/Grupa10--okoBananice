@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T15:08:21.371</Modified>
+      <Modified>2018-04-03T21:10:53.348</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Posta.exe">
       <PackagePath>entrypoint\Posta.exe</PackagePath>
-      <Modified>2018-04-03T15:08:13.842</Modified>
+      <Modified>2018-04-03T21:10:48.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,9 +448,41 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-04-02T10:47:05.961</Modified>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m1.png">
+      <PackagePath>Forms\Slike\Markice\m1.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m2.png">
+      <PackagePath>Forms\Slike\Markice\m2.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m3.png">
+      <PackagePath>Forms\Slike\Markice\m3.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.464</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m4.png">
+      <PackagePath>Forms\Slike\Markice\m4.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m5.png">
+      <PackagePath>Forms\Slike\Markice\m5.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m6.png">
+      <PackagePath>Forms\Slike\Markice\m6.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m7.png">
+      <PackagePath>Forms\Slike\Markice\m7.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m8.png">
+      <PackagePath>Forms\Slike\Markice\m8.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.622</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m9.png">
+      <PackagePath>Forms\Slike\Markice\m9.png</PackagePath>
+      <Modified>2018-04-03T21:06:49.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -486,9 +518,49 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-02T10:47:05.946</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r1.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r1.jpg</PackagePath>
+      <Modified>2018-04-03T20:34:49.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r2.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r2.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r3.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r3.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r4.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r4.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r5.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r5.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r6.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r6.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r7.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r7.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r8.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r8.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r9.jpg">
+      <PackagePath>Forms\Slike\Razglednice\r9.jpg</PackagePath>
+      <Modified>2018-04-03T20:41:07.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2018-04-02T10:47:05.961</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Posta.xr.xml">
       <PackagePath>Posta.xr.xml</PackagePath>
-      <Modified>2018-04-03T15:08:11.291</Modified>
+      <Modified>2018-04-03T20:51:48.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +569,11 @@
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T15:08:18.199</Modified>
+      <Modified>2018-04-03T21:10:52.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Core\Posta.exe">
       <PackagePath>Posta.exe</PackagePath>
-      <Modified>2018-04-03T15:08:21.361</Modified>
+      <Modified>2018-04-03T21:10:53.334</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,30 @@ namespace Posta
         {
             this.InitializeComponent();
         }
-        
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Forms.LogIn));
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Forms.OpcijePotrosaca));
+        }
+
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Forms.OpcijeSalter));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Forms.FormaPostara));
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Forms.Shop));
+        }
     }
 }

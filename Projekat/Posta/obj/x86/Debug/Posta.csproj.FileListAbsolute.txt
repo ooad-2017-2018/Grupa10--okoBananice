@@ -205,3 +205,13 @@ C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\OpcijeSal
 C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\OpcijeSalter.g.cs
 C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\OpcijeSalter.xaml
 C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\OpcijeSalter.xbf
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\FormaPostara.g.i.cs
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\FormaPostara.g.cs
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\FormaPostara.xaml
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\FormaPostara.xbf
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Forms\FormaPostara.xbf
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Forms\Shop.xbf
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\Shop.g.i.cs
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\Shop.g.cs
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\Shop.xaml
+C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\Forms\Shop.xbf

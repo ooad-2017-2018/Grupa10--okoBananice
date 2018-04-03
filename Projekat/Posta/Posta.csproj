@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormaPostara.xaml.cs">
+      <DependentUpon>FormaPostara.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,9 @@
     </Compile>
     <Compile Include="Forms\OpcijeSalter.xaml.cs">
       <DependentUpon>OpcijeSalter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shop.xaml.cs">
+      <DependentUpon>Shop.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -116,6 +122,24 @@
     <None Include="Posta_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Forms\Slike\Markice\m1.png" />
+    <Content Include="Forms\Slike\Markice\m2.png" />
+    <Content Include="Forms\Slike\Markice\m3.png" />
+    <Content Include="Forms\Slike\Markice\m4.png" />
+    <Content Include="Forms\Slike\Markice\m5.png" />
+    <Content Include="Forms\Slike\Markice\m6.png" />
+    <Content Include="Forms\Slike\Markice\m7.png" />
+    <Content Include="Forms\Slike\Markice\m8.png" />
+    <Content Include="Forms\Slike\Markice\m9.png" />
+    <Content Include="Forms\Slike\Razglednice\r1.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r2.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r3.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r4.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r5.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r6.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r7.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r8.jpg" />
+    <Content Include="Forms\Slike\Razglednice\r9.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -130,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Forms\FormaPostara.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -139,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Forms\OpcijeSalter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\Shop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
