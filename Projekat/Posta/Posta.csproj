@@ -95,6 +95,24 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DetaljiPotrosaca.xaml.cs">
+      <DependentUpon>DetaljiPotrosaca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NaplataRacuna.xaml.cs">
+      <DependentUpon>NaplataRacuna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PracenjePaketa.xaml.cs">
+      <DependentUpon>PracenjePaketa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PregledRacuna.xaml.cs">
+      <DependentUpon>PregledRacuna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PretragaPotrosaca.xaml.cs">
+      <DependentUpon>PretragaPotrosaca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistracijaUposlenika.xaml.cs">
+      <DependentUpon>RegistracijaUposlenika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormaPostara.xaml.cs">
       <DependentUpon>FormaPostara.xaml</DependentUpon>
     </Compile>
@@ -109,6 +127,9 @@
     </Compile>
     <Compile Include="Forms\Shop.xaml.cs">
       <DependentUpon>Shop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SlanjePaketa.xaml.cs">
+      <DependentUpon>SlanjePaketa.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -154,6 +175,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Forms\DetaljiPotrosaca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\NaplataRacuna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\PracenjePaketa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\PregledRacuna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\PretragaPotrosaca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\RegistracijaUposlenika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\FormaPostara.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -171,6 +216,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Forms\Shop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\SlanjePaketa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
