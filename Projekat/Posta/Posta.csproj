@@ -110,6 +110,9 @@
     <Compile Include="Forms\PretragaPotrosaca.xaml.cs">
       <DependentUpon>PretragaPotrosaca.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RegistracijaPotrosaca.xaml.cs">
+      <DependentUpon>RegistracijaPotrosaca.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RegistracijaUposlenika.xaml.cs">
       <DependentUpon>RegistracijaUposlenika.xaml</DependentUpon>
     </Compile>
@@ -192,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Forms\PretragaPotrosaca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\RegistracijaPotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
