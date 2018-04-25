@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdministratorOpcije.xaml.cs">
+      <DependentUpon>AdministratorOpcije.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DetaljiPotrosaca.xaml.cs">
       <DependentUpon>DetaljiPotrosaca.xaml</DependentUpon>
     </Compile>
@@ -178,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Forms\AdministratorOpcije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\DetaljiPotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
