@@ -8,28 +8,171 @@ namespace Posta.Model
 {
     public class Potrosac : IPotrosac
     {
-        private string ime, prezime, brojTelefona, adresa, JMBG, email, password;
+        private string ime;
+        private string prezime;
+        private string brojTelefona;
+        private string adresa;
+        private string JMBG;
+        private string email;
+        private string password;
         private DateTime datumRodjenja;
         List<Racun> sviRacuni;
         List<Paket> sviPaketi;
 
+        //pomocni konstruktor
+        public Potrosac(string e, string p)
+        {
+            email = e;
+            password = p;
+        }
+
+        public string Ime
+        {
+            get
+            {
+                return ime;
+            }
+
+            set
+            {
+                ime = value;
+            }
+        }
+
+        public string Prezime
+        {
+            get
+            {
+                return prezime;
+            }
+
+            set
+            {
+                prezime = value;
+            }
+        }
+
+        public string BrojTelefona
+        {
+            get
+            {
+                return brojTelefona;
+            }
+
+            set
+            {
+                brojTelefona = value;
+            }
+        }
+
+        public string Adresa
+        {
+            get
+            {
+                return adresa;
+            }
+
+            set
+            {
+                adresa = value;
+            }
+        }
+
+        public string JMBG1
+        {
+            get
+            {
+                return JMBG;
+            }
+
+            set
+            {
+                JMBG = value;
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+
+            set
+            {
+                email = value;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+
+            set
+            {
+                password = value;
+            }
+        }
+
+        public DateTime DatumRodjenja
+        {
+            get
+            {
+                return datumRodjenja;
+            }
+
+            set
+            {
+                datumRodjenja = value;
+            }
+        }
+
+        public List<Racun> SviRacuni
+        {
+            get
+            {
+                return sviRacuni;
+            }
+
+            set
+            {
+                sviRacuni = value;
+            }
+        }
+
+        public List<Paket> SviPaketi
+        {
+            get
+            {
+                return sviPaketi;
+            }
+
+            set
+            {
+                sviPaketi = value;
+            }
+        }
+
         public Potrosac()
         {
-            sviRacuni = new List<Racun>();
-            sviPaketi = new List<Paket>();
+            SviRacuni = new List<Racun>();
+            SviPaketi = new List<Paket>();
         }
         public Potrosac(string ime, string prezime, string brojTelefona, string adresa, string jMBG, string email, string password, DateTime datumRodjenja)
         {
-            this.ime = ime;
-            this.prezime = prezime;
-            this.brojTelefona = brojTelefona;
-            this.adresa = adresa;
-            JMBG = jMBG;
-            this.email = email;
-            this.password = password;
-            this.datumRodjenja = datumRodjenja;
-            sviRacuni = new List<Racun>();
-            sviPaketi = new List<Paket>();
+            this.Ime = ime;
+            this.Prezime = prezime;
+            this.BrojTelefona = brojTelefona;
+            this.Adresa = adresa;
+            JMBG1 = jMBG;
+            this.Email = email;
+            this.Password = password;
+            this.DatumRodjenja = datumRodjenja;
+            SviRacuni = new List<Racun>();
+            SviPaketi = new List<Paket>();
         }
 
         public void DodajRacun(Racun r)

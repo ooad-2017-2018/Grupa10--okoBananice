@@ -8,16 +8,78 @@ namespace Posta.Model
 {
     public class ePosta : IPosta
     {
-        List<Uposlenik> sviUposlenici;
-        List<Potrosac> sviPotrosaci;
-        List<Paket> sviPaketi;
-        List<Racun> sviRacuni;
-        public ePosta()
+        public static ePosta ePostaInstanca;
+        private List<Uposlenik> sviUposlenici;
+        private List<Potrosac> sviPotrosaci;
+        private List<Paket> sviPaketi;
+        private List<Racun> sviRacuni;
+
+        public static ePosta Instanca
         {
-            sviUposlenici = new List<Uposlenik>();
-            sviPotrosaci = new List<Potrosac>();
-            sviPaketi = new List<Paket>();
-            sviRacuni = new List<Racun>();
+            get
+            {
+                return ePostaInstanca ?? (ePostaInstanca = new ePosta());
+            }
+        }
+        
+        public List<Uposlenik> SviUposlenici
+        {
+            get
+            {
+                return sviUposlenici;
+            }
+
+            set
+            {
+                sviUposlenici = value;
+            }
+        }
+
+        public List<Potrosac> SviPotrosaci
+        {
+            get
+            {
+                return sviPotrosaci;
+            }
+
+            set
+            {
+                sviPotrosaci = value;
+            }
+        }
+
+        public List<Paket> SviPaketi
+        {
+            get
+            {
+                return sviPaketi;
+            }
+
+            set
+            {
+                sviPaketi = value;
+            }
+        }
+
+        public List<Racun> SviRacuni
+        {
+            get
+            {
+                return sviRacuni;
+            }
+
+            set
+            {
+                sviRacuni = value;
+            }
+        }
+
+        private ePosta()
+        {
+            SviUposlenici = new List<Uposlenik>();
+            SviPotrosaci = new List<Potrosac>();
+            SviPaketi = new List<Paket>();
+            SviRacuni = new List<Racun>();
         }
 
         public Potrosac dajPotrosaca(string jmbg)
@@ -32,12 +94,12 @@ namespace Posta.Model
 
         public void dodajPotrosaca(Potrosac p)
         {
-            throw new NotImplementedException();
+            sviPotrosaci.Add(p);
         }
 
         public void dodajUposlenika(Uposlenik u)
         {
-            throw new NotImplementedException();
+            SviUposlenici.Add(u);
         }
     }
 }

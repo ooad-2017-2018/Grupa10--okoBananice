@@ -106,6 +106,7 @@
     <Compile Include="Model\Racun.cs" />
     <Compile Include="Model\Salterusa.cs" />
     <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\AdministratorOpcije.xaml.cs">
       <DependentUpon>AdministratorOpcije.xaml</DependentUpon>
     </Compile>
@@ -253,9 +254,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

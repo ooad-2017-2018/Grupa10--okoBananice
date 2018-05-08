@@ -13,6 +13,11 @@ namespace Posta.Model
 
         }
 
+        public Salterusa(string e, string p) : base(e,p)
+        {
+
+        }
+
         public void DodajPotrosaca(Potrosac p)
         {
 

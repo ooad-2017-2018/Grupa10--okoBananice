@@ -13,7 +13,13 @@ namespace Posta.Model
 
         }
 
-    public void PregledPaketa(Paket p)
+
+        public Postar(string e, string p) : base(e,p)
+        {
+
+        }
+
+        public void PregledPaketa(Paket p)
         {
             
         }

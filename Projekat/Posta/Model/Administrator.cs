@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace Posta.Model
 {
-    public class Administrator
-    {
-        private string ime, prezime;
-
-        public Administrator()
+    public class Administrator : Uposlenik
+    {   public Administrator()
         {
-
+            Ime = "Coko";
+            Prezime = "Bananice";
+            Email = "fsmajlovic1";
+            Password = "etf";
         }
-
-        public Administrator(string ime, string prezime)
-        {
-            this.ime = ime;
-            this.prezime = prezime;
-        }
-
+        
         public void ProvjeriStanja()
         {
 

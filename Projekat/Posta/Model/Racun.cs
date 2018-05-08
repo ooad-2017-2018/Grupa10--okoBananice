@@ -8,9 +8,48 @@ namespace Posta.Model
 {
     public class Racun : IRacun
     {
-        private int id,cijena;
+        private int id;
+        private int cijena;
         private bool stanje;
 
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
+        public int Cijena
+        {
+            get
+            {
+                return cijena;
+            }
+
+            set
+            {
+                cijena = value;
+            }
+        }
+
+        public bool Stanje
+        {
+            get
+            {
+                return stanje;
+            }
+
+            set
+            {
+                stanje = value;
+            }
+        }
 
         public Racun()
         {
@@ -23,10 +62,10 @@ namespace Posta.Model
             this.Cijena = cijena;
             this.Stanje = stanje;
         }
-
+        /*
         public int Id { get => id; set => id = value; }
         public int Cijena { get => cijena; set => cijena = value; }
-        public bool Stanje { get => stanje; set => stanje = value; }
+        public bool Stanje { get => stanje; set => stanje = value; }*/
 
         public void GenerisiID()
         {

@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5f4e7f8a-7380-4d03-b789-dd15111a9172</PackageIdentityName>
     <PackageIdentityPublisher>CN=selma</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Posta.exe">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.exe">
       <PackagePath>entrypoint\Posta.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -334,101 +334,101 @@
     <AppxPackagedFile Include="C:\Users\selma\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m1.png">
-      <PackagePath>Forms\Slike\Markice\m1.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m1.png">
+      <PackagePath>View\Slike\Markice\m1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m2.png">
-      <PackagePath>Forms\Slike\Markice\m2.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m2.png">
+      <PackagePath>View\Slike\Markice\m2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m3.png">
-      <PackagePath>Forms\Slike\Markice\m3.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m3.png">
+      <PackagePath>View\Slike\Markice\m3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m4.png">
-      <PackagePath>Forms\Slike\Markice\m4.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m4.png">
+      <PackagePath>View\Slike\Markice\m4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m5.png">
-      <PackagePath>Forms\Slike\Markice\m5.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m5.png">
+      <PackagePath>View\Slike\Markice\m5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m6.png">
-      <PackagePath>Forms\Slike\Markice\m6.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m6.png">
+      <PackagePath>View\Slike\Markice\m6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m7.png">
-      <PackagePath>Forms\Slike\Markice\m7.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m7.png">
+      <PackagePath>View\Slike\Markice\m7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m8.png">
-      <PackagePath>Forms\Slike\Markice\m8.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m8.png">
+      <PackagePath>View\Slike\Markice\m8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Markice\m9.png">
-      <PackagePath>Forms\Slike\Markice\m9.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m9.png">
+      <PackagePath>View\Slike\Markice\m9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r1.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r1.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r1.jpg">
+      <PackagePath>View\Slike\Razglednice\r1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r2.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r2.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r2.jpg">
+      <PackagePath>View\Slike\Razglednice\r2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r3.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r3.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r3.jpg">
+      <PackagePath>View\Slike\Razglednice\r3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r4.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r4.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r4.jpg">
+      <PackagePath>View\Slike\Razglednice\r4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r5.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r5.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r5.jpg">
+      <PackagePath>View\Slike\Razglednice\r5.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r6.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r6.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r6.jpg">
+      <PackagePath>View\Slike\Razglednice\r6.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r7.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r7.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r7.jpg">
+      <PackagePath>View\Slike\Razglednice\r7.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r8.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r8.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r8.jpg">
+      <PackagePath>View\Slike\Razglednice\r8.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Forms\Slike\Razglednice\r9.jpg">
-      <PackagePath>Forms\Slike\Razglednice\r9.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r9.jpg">
+      <PackagePath>View\Slike\Razglednice\r9.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Posta.xr.xml">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.xr.xml">
       <PackagePath>Posta.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\bin\x86\Debug\Core\Posta.exe">
+    <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\Posta.exe">
       <PackagePath>Posta.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
