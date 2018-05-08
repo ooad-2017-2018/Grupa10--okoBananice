@@ -1,1 +1,1 @@
-C:\Users\selma\Desktop\FAX\OOAD\uwp\Projekat\Posta\Posta.csproj;arm
+C:\Users\rukf2\Desktop\Grupa10-CokoBananice\Projekat\Posta\Posta.csproj;arm

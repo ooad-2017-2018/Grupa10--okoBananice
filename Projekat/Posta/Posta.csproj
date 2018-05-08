@@ -95,46 +95,57 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdministratorOpcije.xaml.cs">
+    <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\ePosta.cs" />
+    <Compile Include="Model\IPosta.cs" />
+    <Compile Include="Model\IPotrosac.cs" />
+    <Compile Include="Model\IRacun.cs" />
+    <Compile Include="Model\Paket.cs" />
+    <Compile Include="Model\Postar.cs" />
+    <Compile Include="Model\Potrosac.cs" />
+    <Compile Include="Model\Racun.cs" />
+    <Compile Include="Model\Salterusa.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="View\AdministratorOpcije.xaml.cs">
       <DependentUpon>AdministratorOpcije.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DetaljiPotrosaca.xaml.cs">
+    <Compile Include="View\DetaljiPotrosaca.xaml.cs">
       <DependentUpon>DetaljiPotrosaca.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NaplataRacuna.xaml.cs">
+    <Compile Include="View\NaplataRacuna.xaml.cs">
       <DependentUpon>NaplataRacuna.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PracenjePaketa.xaml.cs">
+    <Compile Include="View\PracenjePaketa.xaml.cs">
       <DependentUpon>PracenjePaketa.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PregledRacuna.xaml.cs">
+    <Compile Include="View\PregledRacuna.xaml.cs">
       <DependentUpon>PregledRacuna.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PretragaPotrosaca.xaml.cs">
+    <Compile Include="View\PretragaPotrosaca.xaml.cs">
       <DependentUpon>PretragaPotrosaca.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegistracijaPotrosaca.xaml.cs">
+    <Compile Include="View\RegistracijaPotrosaca.xaml.cs">
       <DependentUpon>RegistracijaPotrosaca.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegistracijaUposlenika.xaml.cs">
+    <Compile Include="View\RegistracijaUposlenika.xaml.cs">
       <DependentUpon>RegistracijaUposlenika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormaPostara.xaml.cs">
+    <Compile Include="View\FormaPostara.xaml.cs">
       <DependentUpon>FormaPostara.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LogIn.xaml.cs">
+    <Compile Include="View\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OpcijePotrosaca.xaml.cs">
+    <Compile Include="View\OpcijePotrosaca.xaml.cs">
       <DependentUpon>OpcijePotrosaca.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OpcijeSalter.xaml.cs">
+    <Compile Include="View\OpcijeSalter.xaml.cs">
       <DependentUpon>OpcijeSalter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Shop.xaml.cs">
+    <Compile Include="View\Shop.xaml.cs">
       <DependentUpon>Shop.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SlanjePaketa.xaml.cs">
+    <Compile Include="View\SlanjePaketa.xaml.cs">
       <DependentUpon>SlanjePaketa.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -149,24 +160,24 @@
     <None Include="Posta_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Forms\Slike\Markice\m1.png" />
-    <Content Include="Forms\Slike\Markice\m2.png" />
-    <Content Include="Forms\Slike\Markice\m3.png" />
-    <Content Include="Forms\Slike\Markice\m4.png" />
-    <Content Include="Forms\Slike\Markice\m5.png" />
-    <Content Include="Forms\Slike\Markice\m6.png" />
-    <Content Include="Forms\Slike\Markice\m7.png" />
-    <Content Include="Forms\Slike\Markice\m8.png" />
-    <Content Include="Forms\Slike\Markice\m9.png" />
-    <Content Include="Forms\Slike\Razglednice\r1.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r2.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r3.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r4.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r5.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r6.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r7.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r8.jpg" />
-    <Content Include="Forms\Slike\Razglednice\r9.jpg" />
+    <Content Include="View\Slike\Markice\m1.png" />
+    <Content Include="View\Slike\Markice\m2.png" />
+    <Content Include="View\Slike\Markice\m3.png" />
+    <Content Include="View\Slike\Markice\m4.png" />
+    <Content Include="View\Slike\Markice\m5.png" />
+    <Content Include="View\Slike\Markice\m6.png" />
+    <Content Include="View\Slike\Markice\m7.png" />
+    <Content Include="View\Slike\Markice\m8.png" />
+    <Content Include="View\Slike\Markice\m9.png" />
+    <Content Include="View\Slike\Razglednice\r1.jpg" />
+    <Content Include="View\Slike\Razglednice\r2.jpg" />
+    <Content Include="View\Slike\Razglednice\r3.jpg" />
+    <Content Include="View\Slike\Razglednice\r4.jpg" />
+    <Content Include="View\Slike\Razglednice\r5.jpg" />
+    <Content Include="View\Slike\Razglednice\r6.jpg" />
+    <Content Include="View\Slike\Razglednice\r7.jpg" />
+    <Content Include="View\Slike\Razglednice\r8.jpg" />
+    <Content Include="View\Slike\Razglednice\r9.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -181,59 +192,59 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Forms\AdministratorOpcije.xaml">
+    <Page Include="View\AdministratorOpcije.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\DetaljiPotrosaca.xaml">
+    <Page Include="View\DetaljiPotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\NaplataRacuna.xaml">
+    <Page Include="View\NaplataRacuna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\PracenjePaketa.xaml">
+    <Page Include="View\PracenjePaketa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\PregledRacuna.xaml">
+    <Page Include="View\PregledRacuna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\PretragaPotrosaca.xaml">
+    <Page Include="View\PretragaPotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\RegistracijaPotrosaca.xaml">
+    <Page Include="View\RegistracijaPotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\RegistracijaUposlenika.xaml">
+    <Page Include="View\RegistracijaUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\FormaPostara.xaml">
+    <Page Include="View\FormaPostara.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\LogIn.xaml">
+    <Page Include="View\LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\OpcijePotrosaca.xaml">
+    <Page Include="View\OpcijePotrosaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\OpcijeSalter.xaml">
+    <Page Include="View\OpcijeSalter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\Shop.xaml">
+    <Page Include="View\Shop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\SlanjePaketa.xaml">
+    <Page Include="View\SlanjePaketa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -242,7 +253,9 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

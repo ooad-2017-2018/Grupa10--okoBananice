@@ -132,19 +132,43 @@ namespace Posta.Posta_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "Posta.Forms.LogIn";
+            _typeNameTable = new string[17];
+            _typeNameTable[0] = "Posta.Forms.AdministratorOpcije";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Posta.Forms.OpcijePotrosaca";
-            _typeNameTable[4] = "Posta.MainPage";
+            _typeNameTable[3] = "Posta.Forms.DetaljiPotrosaca";
+            _typeNameTable[4] = "Posta.Forms.NaplataRacuna";
+            _typeNameTable[5] = "Posta.Forms.PracenjePaketa";
+            _typeNameTable[6] = "Posta.Forms.PregledRacuna";
+            _typeNameTable[7] = "Posta.Forms.PretragaPotrosaca";
+            _typeNameTable[8] = "Posta.Forms.RegistracijaPotrosaca";
+            _typeNameTable[9] = "Posta.Forms.RegistracijaUposlenika";
+            _typeNameTable[10] = "Posta.Forms.FormaPostara";
+            _typeNameTable[11] = "Posta.Forms.LogIn";
+            _typeNameTable[12] = "Posta.Forms.OpcijePotrosaca";
+            _typeNameTable[13] = "Posta.Forms.OpcijeSalter";
+            _typeNameTable[14] = "Posta.Forms.Shop";
+            _typeNameTable[15] = "Posta.Forms.SlanjePaketa";
+            _typeNameTable[16] = "Posta.MainPage";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::Posta.Forms.LogIn);
+            _typeTable = new global::System.Type[17];
+            _typeTable[0] = typeof(global::Posta.Forms.AdministratorOpcije);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Posta.Forms.OpcijePotrosaca);
-            _typeTable[4] = typeof(global::Posta.MainPage);
+            _typeTable[3] = typeof(global::Posta.Forms.DetaljiPotrosaca);
+            _typeTable[4] = typeof(global::Posta.Forms.NaplataRacuna);
+            _typeTable[5] = typeof(global::Posta.Forms.PracenjePaketa);
+            _typeTable[6] = typeof(global::Posta.Forms.PregledRacuna);
+            _typeTable[7] = typeof(global::Posta.Forms.PretragaPotrosaca);
+            _typeTable[8] = typeof(global::Posta.Forms.RegistracijaPotrosaca);
+            _typeTable[9] = typeof(global::Posta.Forms.RegistracijaUposlenika);
+            _typeTable[10] = typeof(global::Posta.Forms.FormaPostara);
+            _typeTable[11] = typeof(global::Posta.Forms.LogIn);
+            _typeTable[12] = typeof(global::Posta.Forms.OpcijePotrosaca);
+            _typeTable[13] = typeof(global::Posta.Forms.OpcijeSalter);
+            _typeTable[14] = typeof(global::Posta.Forms.Shop);
+            _typeTable[15] = typeof(global::Posta.Forms.SlanjePaketa);
+            _typeTable[16] = typeof(global::Posta.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +203,21 @@ namespace Posta.Posta_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_LogIn() { return new global::Posta.Forms.LogIn(); }
-        private object Activate_3_OpcijePotrosaca() { return new global::Posta.Forms.OpcijePotrosaca(); }
-        private object Activate_4_MainPage() { return new global::Posta.MainPage(); }
+        private object Activate_0_AdministratorOpcije() { return new global::Posta.Forms.AdministratorOpcije(); }
+        private object Activate_3_DetaljiPotrosaca() { return new global::Posta.Forms.DetaljiPotrosaca(); }
+        private object Activate_4_NaplataRacuna() { return new global::Posta.Forms.NaplataRacuna(); }
+        private object Activate_5_PracenjePaketa() { return new global::Posta.Forms.PracenjePaketa(); }
+        private object Activate_6_PregledRacuna() { return new global::Posta.Forms.PregledRacuna(); }
+        private object Activate_7_PretragaPotrosaca() { return new global::Posta.Forms.PretragaPotrosaca(); }
+        private object Activate_8_RegistracijaPotrosaca() { return new global::Posta.Forms.RegistracijaPotrosaca(); }
+        private object Activate_9_RegistracijaUposlenika() { return new global::Posta.Forms.RegistracijaUposlenika(); }
+        private object Activate_10_FormaPostara() { return new global::Posta.Forms.FormaPostara(); }
+        private object Activate_11_LogIn() { return new global::Posta.Forms.LogIn(); }
+        private object Activate_12_OpcijePotrosaca() { return new global::Posta.Forms.OpcijePotrosaca(); }
+        private object Activate_13_OpcijeSalter() { return new global::Posta.Forms.OpcijeSalter(); }
+        private object Activate_14_Shop() { return new global::Posta.Forms.Shop(); }
+        private object Activate_15_SlanjePaketa() { return new global::Posta.Forms.SlanjePaketa(); }
+        private object Activate_16_MainPage() { return new global::Posta.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +229,9 @@ namespace Posta.Posta_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Posta.Forms.LogIn
+            case 0:   //  Posta.Forms.AdministratorOpcije
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LogIn;
+                userType.Activator = Activate_0_AdministratorOpcije;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -208,16 +244,100 @@ namespace Posta.Posta_XamlTypeInfo
                 xamlType = new global::Posta.Posta_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Posta.Forms.OpcijePotrosaca
+            case 3:   //  Posta.Forms.DetaljiPotrosaca
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_OpcijePotrosaca;
+                userType.Activator = Activate_3_DetaljiPotrosaca;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Posta.MainPage
+            case 4:   //  Posta.Forms.NaplataRacuna
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_NaplataRacuna;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Posta.Forms.PracenjePaketa
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_PracenjePaketa;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Posta.Forms.PregledRacuna
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_PregledRacuna;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Posta.Forms.PretragaPotrosaca
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_PretragaPotrosaca;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Posta.Forms.RegistracijaPotrosaca
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_RegistracijaPotrosaca;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Posta.Forms.RegistracijaUposlenika
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_RegistracijaUposlenika;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Posta.Forms.FormaPostara
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_FormaPostara;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Posta.Forms.LogIn
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_LogIn;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Posta.Forms.OpcijePotrosaca
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_OpcijePotrosaca;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Posta.Forms.OpcijeSalter
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_OpcijeSalter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Posta.Forms.Shop
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_Shop;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Posta.Forms.SlanjePaketa
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_SlanjePaketa;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Posta.MainPage
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
