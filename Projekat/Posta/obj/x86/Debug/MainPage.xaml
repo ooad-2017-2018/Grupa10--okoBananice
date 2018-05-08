@@ -6,13 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <Frame>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:ConnectionId='1' x:Name="button" Content="login" HorizontalAlignment="Left" Margin="102,304,0,0" VerticalAlignment="Top"                     />
-        <Button x:ConnectionId='2' x:Name="button_Copy" Content="potrosac" HorizontalAlignment="Left" Margin="175,304,0,0" VerticalAlignment="Top"                          />
-        <Button x:ConnectionId='3' x:Name="button_Copy1" Content="salter" HorizontalAlignment="Left" Margin="257,304,0,0" VerticalAlignment="Top"                           />
-        <Button x:ConnectionId='4' x:Name="button1" Content="Postar" HorizontalAlignment="Left" Margin="135,364,0,0" VerticalAlignment="Top"                      />
-        <Button x:ConnectionId='5' x:Name="button2" Content="Shop" HorizontalAlignment="Left" Margin="102,270,0,0" VerticalAlignment="Top"                      />
+        
     </Grid>
+    </Frame>
 </Page>
 

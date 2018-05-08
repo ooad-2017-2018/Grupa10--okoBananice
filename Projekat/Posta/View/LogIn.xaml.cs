@@ -50,7 +50,7 @@ namespace Posta.Forms
         private void bLogin_Click(object sender, RoutedEventArgs e)
         {
             lvm.EMail = tbEmail.Text;
-            lvm.Pass = tbPassword.Text;
+            lvm.Pass = tbPassword.Password;
 
             var osobaP = lvm.validateP();
             var osobaU = lvm.validateU();
@@ -79,5 +79,13 @@ namespace Posta.Forms
                 }
             }
         }
+
+        private void tbEmail_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (tbEmail.Text.Equals("E-mail"))
+                tbEmail.Text = "";
+        }
+        
+
     }
 }

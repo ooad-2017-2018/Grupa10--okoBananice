@@ -1,21 +1,30 @@
 ﻿using Posta.Model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Posta.ViewModel
 {
-    public class LoginViewModel
+    public class LoginViewModel : INotifyPropertyChanged
     {
         ePosta sveListe = ePosta.Instanca;
 
         private string eMail;
         private string pass;
 
-        Potrosac potrosac;
-        Uposlenik uposlenik;
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if(PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
 
         public string EMail
         {
@@ -27,9 +36,9 @@ namespace Posta.ViewModel
             set
             {
                 eMail = value;
+                OnPropertyChanged("EMail");
             }
         }
-
         public string Pass
         {
             get
@@ -40,13 +49,14 @@ namespace Posta.ViewModel
             set
             {
                 pass = value;
+                OnPropertyChanged("Pass");
             }
         }
 
         public LoginViewModel()
         {
-            eMail = "";
-            pass = "";
+             eMail = "";
+             pass = "";
         }
         
         public Potrosac validateP()
