@@ -24,8 +24,7 @@ namespace Posta.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
-
+        
         public string EMail
         {
             get
@@ -36,7 +35,10 @@ namespace Posta.ViewModel
             set
             {
                 eMail = value;
-                OnPropertyChanged("EMail");
+                if(PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(EMail)));
+                }
             }
         }
         public string Pass
@@ -49,7 +51,10 @@ namespace Posta.ViewModel
             set
             {
                 pass = value;
-                OnPropertyChanged("Pass");
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Pass)));
+                }
             }
         }
 

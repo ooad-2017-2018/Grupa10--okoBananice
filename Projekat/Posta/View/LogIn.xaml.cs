@@ -24,7 +24,7 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class LogIn : Page, INotifyPropertyChanged
     {
-        LoginViewModel lvm;
+        public LoginViewModel lvm { get; set; } = new LoginViewModel();
 
         public LogIn()
         {
@@ -34,7 +34,8 @@ namespace Posta.Forms
             ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
             ePosta.Instanca.dodajUposlenika(new Postar("faruks", "faruk"));
             ePosta.Instanca.dodajUposlenika(new Administrator());
-            lvm = new LoginViewModel();
+            
+            this.DataContext = lvm;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -49,9 +50,6 @@ namespace Posta.Forms
 
         private void bLogin_Click(object sender, RoutedEventArgs e)
         {
-            lvm.EMail = tbEmail.Text;
-            lvm.Pass = tbPassword.Password;
-
             var osobaP = lvm.validateP();
             var osobaU = lvm.validateU();
             if(osobaP != null)
