@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Posta.Model;
+using Posta.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +24,33 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class DetaljiPotrosaca : Page
     {
+        private DetaljiPotrosacaViewModel dpvm;
+        Potrosac trenutni;
+        private string navigacija;
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            trenutni = (Potrosac)e.Parameter;
+            dpvm.Trenutni = trenutni;
+            dpvm.popuni();
+        }
+
         public DetaljiPotrosaca()
         {
             this.InitializeComponent();
+            dpvm = new DetaljiPotrosacaViewModel();
+            this.DataContext = dpvm;
+        }
+
+        private void bNazad_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AdministratorOpcije));
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

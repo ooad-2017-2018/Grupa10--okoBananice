@@ -21,6 +21,7 @@ namespace Posta.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+        private bool found;
 
         private Potrosac trazeni;
         public AdministratorViewModel()
@@ -65,16 +66,35 @@ namespace Posta.ViewModel
             }
         }
 
+        public bool Found
+        {
+            get
+            {
+                return found;
+            }
+
+            set
+            {
+                found = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Found)));
+                }
+            }
+        }
+
         public void pretraga()
         {
             Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
             if (Trazeni != null)
             {
+                Found = true;
                 var dialog = new MessageDialog("Uspjesno pronadjen potrosac!");
                 dialog.ShowAsync();
             }
             else
             {
+                Found = false;
                 var dialog = new MessageDialog("Nije pronadjen potrosac.");
                 dialog.ShowAsync();
             }

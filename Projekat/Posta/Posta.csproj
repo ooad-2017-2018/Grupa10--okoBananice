@@ -108,6 +108,7 @@
     <Compile Include="Model\Uposlenik.cs" />
     <Compile Include="ViewModel\AdministratorViewModel.cs" />
     <Compile Include="ViewModel\CommandHandler.cs" />
+    <Compile Include="ViewModel\DetaljiPotrosacaViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\PregledRacunaViewModel.cs" />
     <Compile Include="ViewModel\RadioButtonConverter.cs" />

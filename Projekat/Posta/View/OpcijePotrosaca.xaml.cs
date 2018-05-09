@@ -38,7 +38,10 @@ namespace Posta.Forms
 
         private void bPregledRacuna_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PregledRacuna), trenutni);
+            List<object> parametri = new List<object>();
+            parametri.Add(trenutni);
+            parametri.Add("Potrosac");
+            Frame.Navigate(typeof(PregledRacuna), parametri);
         }
 
         private void bPracenjePaketa_Click(object sender, RoutedEventArgs e)

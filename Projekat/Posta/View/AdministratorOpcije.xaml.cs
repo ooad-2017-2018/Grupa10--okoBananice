@@ -31,8 +31,17 @@ namespace Posta.Forms
         {
             this.InitializeComponent();
             avm = new AdministratorViewModel();
+            avm.Found = false;
             this.DataContext = avm;
         }
+
+        /*protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            this.DataContext = avm;
+            avm.Found = false;
+        }*/
+
 
         private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
         {
@@ -45,8 +54,7 @@ namespace Posta.Forms
 
         private void bPodaciPotrosaca_Click(object sender, RoutedEventArgs e)
         {
-            //implementirati pretragu
-            this.Frame.Navigate(typeof(DetaljiPotrosaca), avm.Trazeni);
+            this.Frame.Navigate(typeof(DetaljiPotrosaca), trazeni);
         }
         private void bObrisiPotrosaca_Click(object sender, RoutedEventArgs e)
         {
@@ -57,7 +65,10 @@ namespace Posta.Forms
         private void bPrikazRacuna_Click(object sender, RoutedEventArgs e)
         {
             //implementirati pretragu
-            this.Frame.Navigate(typeof(PregledRacuna), avm.Trazeni);
+            List<object> parametri = new List<object>();
+            parametri.Add(avm.Trazeni);
+            parametri.Add("Admin");
+            this.Frame.Navigate(typeof(PregledRacuna), parametri);
         }
     }
 }

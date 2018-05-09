@@ -2,7 +2,13 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="PretraziPotrosacaCommand" />
+    <RootPropertyPathName Name="Found" />
     <RootPropertyPathName Name="Jmbg" />
+    <RootPropertyPathName Name="BrojTelefona" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="Adresa" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="Racuni" />
     <RootPropertyPathName Name="Pass" />
     <RootPropertyPathName Name="Radio" />
@@ -50,6 +56,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Command" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
@@ -78,9 +85,9 @@
       <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
       <RootProperty Name="Path" />
       <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Posta.Forms.AdministratorOpcije" />
     <RootType FullName="Posta.Forms.DetaljiPotrosaca" />

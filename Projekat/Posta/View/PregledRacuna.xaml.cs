@@ -29,6 +29,7 @@ namespace Posta.Forms
         Potrosac trenutni;
         ObservableCollection<Racun> racuni;
         private PregledRacunaViewModel prvm;
+        private string navigacija;
 
         //probaj bez ovoga
         public ObservableCollection<Racun> Racuni
@@ -48,8 +49,11 @@ namespace Posta.Forms
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            trenutni = (Potrosac)e.Parameter;
-            
+            List<object> parametri = (List<object>)e.Parameter;
+            //trenutni = (Potrosac)e.Parameter;
+            trenutni = (Potrosac)parametri[0];
+            navigacija = parametri[1].ToString();
+
             prvm.Trenutni = trenutni;
             prvm.Racuni = trenutni.SviRacuni;
         }
@@ -73,7 +77,10 @@ namespace Posta.Forms
 
         private void bNazad_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(OpcijePotrosaca), trenutni);
+            if (navigacija.Equals("Potrosac"))
+                this.Frame.Navigate(typeof(OpcijePotrosaca), trenutni);
+            else if (navigacija.Equals("Admin"))
+                this.Frame.Navigate(typeof(AdministratorOpcije));
         }
         
     }
