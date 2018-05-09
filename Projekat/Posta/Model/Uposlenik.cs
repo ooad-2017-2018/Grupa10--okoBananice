@@ -15,6 +15,11 @@ namespace Posta.Model
         private string adresa;
         private DateTime datumRodjenja;
 
+        protected Uposlenik()
+        {
+
+        }
+
         public string Ime
         {
             get
@@ -92,12 +97,7 @@ namespace Posta.Model
                 datumRodjenja = value;
             }
         }
-
-        public Uposlenik()
-        {
-
-        }
-
+        
         //pomocni konstruktor
         public Uposlenik(string e, string p)
         {

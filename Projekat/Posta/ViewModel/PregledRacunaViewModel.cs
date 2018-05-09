@@ -13,8 +13,8 @@ namespace Posta.ViewModel
     public class PregledRacunaViewModel : INotifyPropertyChanged
     {
         private Potrosac trenutni;
-        private ObservableCollection<Racun> racuni;
-
+        private List<Racun> racuni;
+        
         public Potrosac Trenutni
         {
             get
@@ -28,7 +28,7 @@ namespace Posta.ViewModel
             }
         }
 
-        public ObservableCollection<Racun> Racuni
+        public List<Racun> Racuni
         {
             get
             {
@@ -42,6 +42,7 @@ namespace Posta.ViewModel
             }
         }
 
+        
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
@@ -53,7 +54,6 @@ namespace Posta.ViewModel
 
         public PregledRacunaViewModel()
         {
-
         }
     }
 }

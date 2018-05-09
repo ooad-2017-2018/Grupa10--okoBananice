@@ -106,8 +106,13 @@
     <Compile Include="Model\Racun.cs" />
     <Compile Include="Model\Salterusa.cs" />
     <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="ViewModel\AdministratorViewModel.cs" />
+    <Compile Include="ViewModel\CommandHandler.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\PregledRacunaViewModel.cs" />
+    <Compile Include="ViewModel\RadioButtonConverter.cs" />
+    <Compile Include="ViewModel\RegistracijaUposlenikaViewModel.cs" />
+    <Compile Include="ViewModel\ShopViewModel.cs" />
     <Compile Include="View\AdministratorOpcije.xaml.cs">
       <DependentUpon>AdministratorOpcije.xaml</DependentUpon>
     </Compile>

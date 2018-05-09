@@ -34,6 +34,7 @@ namespace Posta.Forms
             Potrosac selma = new Model.Potrosac("selmav", "selma");
             selma.DodajRacun(new Model.Racun(1, 1, true));
             selma.DodajRacun(new Model.Racun(2, 2, false));
+            selma.JMBG1 = "2307997175013";
             ePosta.Instanca.dodajPotrosaca(selma);
             ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
             ePosta.Instanca.dodajUposlenika(new Postar("faruks", "faruk"));
@@ -81,13 +82,11 @@ namespace Posta.Forms
                 }
             }
         }
-
-        private void tbEmail_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (tbEmail.Text.Equals("E-mail"))
-                tbEmail.Text = "";
-        }
         
+        private void bRegistrujSe_Click(object sender, RoutedEventArgs e)
+        {
+            GlavniFrame.Navigate(typeof(RegistracijaUposlenika), this.DataContext);
+        }
 
     }
 }

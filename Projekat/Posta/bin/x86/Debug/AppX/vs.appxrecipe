@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-09T00:51:01.277</Modified>
+      <Modified>2018-05-09T18:29:32.074</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.exe">
       <PackagePath>entrypoint\Posta.exe</PackagePath>
-      <Modified>2018-05-09T00:50:59.974</Modified>
+      <Modified>2018-05-09T18:29:31.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -560,7 +560,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.xr.xml">
       <PackagePath>Posta.xr.xml</PackagePath>
-      <Modified>2018-05-09T00:47:45.622</Modified>
+      <Modified>2018-05-09T18:24:11.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -569,11 +569,11 @@
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-09T00:47:51.561</Modified>
+      <Modified>2018-05-09T18:24:16.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\Posta.exe">
       <PackagePath>Posta.exe</PackagePath>
-      <Modified>2018-05-09T00:51:01.255</Modified>
+      <Modified>2018-05-09T18:29:32.058</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

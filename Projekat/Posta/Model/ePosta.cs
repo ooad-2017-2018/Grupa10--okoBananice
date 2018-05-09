@@ -84,12 +84,21 @@ namespace Posta.Model
 
         public Potrosac dajPotrosaca(string jmbg)
         {
-            throw new NotImplementedException();
+            Potrosac p = null;
+            try
+            {
+                p = sviPotrosaci.Find((Potrosac i) => i.JMBG1.Equals(jmbg));
+            }
+            catch(Exception)
+            {
+
+            }
+            return p;
         }
 
         public void dodajPaket(Paket p)
         {
-            throw new NotImplementedException();
+            SviPaketi.Add(p);
         }
 
         public void dodajPotrosaca(Potrosac p)

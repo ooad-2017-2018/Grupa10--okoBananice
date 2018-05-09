@@ -17,16 +17,20 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="176*"/>
-            <RowDefinition Height="84*"/>
-            <RowDefinition Height="87*"/>
-            <RowDefinition Height="94*"/>
-            <RowDefinition Height="199*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Height="32" Width="65"/>
-        <Button x:Name="Pregled_racuna" Content="Pregled racuna&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="37,34,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="119"/>
-        <Button x:Name="button1" Content="Pregled paketa&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="34,44,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="119"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="22,42,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Unesite JMBG" VerticalAlignment="Top" TextChanged="textBox_TextChanged" Height="32" Width="162"/>
-        <Button x:Name="button2" Content="Potvrdi brisanje&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="34,61,0,0" Grid.Row="4" VerticalAlignment="Top" Height="31"/>
+        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="button_Click"/>
+        <Button x:Name="bPrikazRacuna" Content="Prikaz racuna" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10.333,0,0" Grid.Row="4" VerticalAlignment="Top" Height="40" Width="186" Click="bPrikazRacuna_Click"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,45,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="textBox_TextChanged" Height="32" Width="186" Text="{Binding Path=Jmbg,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="Unesite JMBG"/>
+        <Button x:Name="bObrisiPotrosaca" Content="Obrisi potrosaca" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Height="31" Width="186" Click="bObrisiPotrosaca_Click"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Pretraga potrosaca:" VerticalAlignment="Top"/>
+        <Button x:Name="bPodaciPotrosaca" Content="Podaci potrosaca" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10.333,0,0" Grid.Row="6" VerticalAlignment="Top" Height="31" Width="186" Click="bPodaciPotrosaca_Click"/>
+        <Button x:Name="bPretraga" Command="{Binding PretraziPotrosacaCommand}" Content="Pretraga" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="186"/>
     </Grid>
 </Page>

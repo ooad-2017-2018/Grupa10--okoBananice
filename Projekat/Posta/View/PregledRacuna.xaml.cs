@@ -30,6 +30,7 @@ namespace Posta.Forms
         ObservableCollection<Racun> racuni;
         private PregledRacunaViewModel prvm;
 
+        //probaj bez ovoga
         public ObservableCollection<Racun> Racuni
         {
             get
@@ -43,12 +44,14 @@ namespace Posta.Forms
                 OnPropertyChanged("Racuni");
             }
         }
-
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             trenutni = (Potrosac)e.Parameter;
-            prvm.Racuni = new ObservableCollection<Racun>(trenutni.SviRacuni);
+            
+            prvm.Trenutni = trenutni;
+            prvm.Racuni = trenutni.SviRacuni;
         }
 
         
@@ -65,7 +68,7 @@ namespace Posta.Forms
         {
             this.InitializeComponent();
             prvm = new PregledRacunaViewModel();
-            prvm.Trenutni = trenutni;
+            this.DataContext = prvm;
         }
 
         private void bNazad_Click(object sender, RoutedEventArgs e)

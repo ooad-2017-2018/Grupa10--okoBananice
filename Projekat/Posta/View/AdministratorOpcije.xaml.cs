@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Posta.Model;
+using Posta.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,14 +24,40 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class AdministratorOpcije : Page
     {
+        private Potrosac trazeni;
+        private AdministratorViewModel avm;
+
         public AdministratorOpcije()
         {
             this.InitializeComponent();
+            avm = new AdministratorViewModel();
+            this.DataContext = avm;
         }
 
         private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
         {
 
+        }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(LogIn), this.DataContext);
+        }
+
+        private void bPodaciPotrosaca_Click(object sender, RoutedEventArgs e)
+        {
+            //implementirati pretragu
+            this.Frame.Navigate(typeof(DetaljiPotrosaca), avm.Trazeni);
+        }
+        private void bObrisiPotrosaca_Click(object sender, RoutedEventArgs e)
+        {
+            //implementirati pretragu
+            //brisanje iz liste i baze
+        }
+
+        private void bPrikazRacuna_Click(object sender, RoutedEventArgs e)
+        {
+            //implementirati pretragu
+            this.Frame.Navigate(typeof(PregledRacuna), avm.Trazeni);
         }
     }
 }
