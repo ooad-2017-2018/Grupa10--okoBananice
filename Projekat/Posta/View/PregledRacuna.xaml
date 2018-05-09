@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="17*"/>
@@ -21,8 +21,10 @@
 
 
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" Height="46" Width="62"/>
+        <Button x:Name="bNazad" Content="Nazad" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" Height="46" Width="62" Click="bNazad_Click" />
         <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="59,29,0,0" TextWrapping="Wrap" Text="Podaci o racunima:" VerticalAlignment="Top"/>
-        <ListView x:Name="listView" Grid.Column="1" HorizontalAlignment="Left" Height="347" Margin="41,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174"/>
+        <ListView x:Name="lvListaRacuna" Grid.Column="1" ItemsSource="{x:Bind Racuni,Mode=OneWay}" HorizontalAlignment="Left" Height="347" Margin="41,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174" />
+
     </Grid>
+        
 </Page>

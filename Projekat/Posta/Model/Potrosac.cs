@@ -24,6 +24,7 @@ namespace Posta.Model
         {
             email = e;
             password = p;
+            SviRacuni = new List<Racun>();
         }
 
         public string Ime
@@ -177,7 +178,7 @@ namespace Posta.Model
 
         public void DodajRacun(Racun r)
         {
-            throw new NotImplementedException();
+            SviRacuni.Add(r);
         }
 
         public void SetujRacun(Racun r)

@@ -25,12 +25,16 @@ namespace Posta.Forms
     public sealed partial class LogIn : Page, INotifyPropertyChanged
     {
         public LoginViewModel lvm { get; set; } = new LoginViewModel();
+        
 
         public LogIn()
         {
             this.InitializeComponent();
             //hardkodirani
-            ePosta.Instanca.dodajPotrosaca(new Potrosac("selmav", "selma"));
+            Potrosac selma = new Model.Potrosac("selmav", "selma");
+            selma.DodajRacun(new Model.Racun(1, 1, true));
+            selma.DodajRacun(new Model.Racun(2, 2, false));
+            ePosta.Instanca.dodajPotrosaca(selma);
             ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
             ePosta.Instanca.dodajUposlenika(new Postar("faruks", "faruk"));
             ePosta.Instanca.dodajUposlenika(new Administrator());
@@ -56,7 +60,7 @@ namespace Posta.Forms
             {
                 //ulogovao potrosac
                 porukaGreske.Visibility = Visibility.Collapsed;
-                GlavniFrame.Navigate(typeof(OpcijePotrosaca), this.DataContext);
+                GlavniFrame.Navigate(typeof(OpcijePotrosaca), osobaP);
             }
             else
             {
@@ -65,11 +69,11 @@ namespace Posta.Forms
                     porukaGreske.Visibility = Visibility.Collapsed;
                     //ulogovao uposlenik
                     if (osobaU is Salterusa)
-                        GlavniFrame.Navigate(typeof(OpcijeSalter), this.DataContext);
+                        GlavniFrame.Navigate(typeof(OpcijeSalter), osobaU);
                     else if (osobaU is Postar)
-                        GlavniFrame.Navigate(typeof(FormaPostara), this.DataContext);
+                        GlavniFrame.Navigate(typeof(FormaPostara), osobaU);
                     else if (osobaU is Administrator)
-                        GlavniFrame.Navigate(typeof(AdministratorOpcije), this.DataContext);
+                        GlavniFrame.Navigate(typeof(AdministratorOpcije), osobaU);
                 }
                 else
                 {

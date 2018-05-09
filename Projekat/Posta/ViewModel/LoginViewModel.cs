@@ -12,7 +12,7 @@ namespace Posta.ViewModel
     public class LoginViewModel : INotifyPropertyChanged
     {
         ePosta sveListe = ePosta.Instanca;
-
+        
         private string eMail;
         private string pass;
 
@@ -60,9 +60,10 @@ namespace Posta.ViewModel
 
         public LoginViewModel()
         {
-             eMail = "";
-             pass = "";
+            eMail = "";
+            pass = "";
         }
+
         
         public Potrosac validateP()
         {

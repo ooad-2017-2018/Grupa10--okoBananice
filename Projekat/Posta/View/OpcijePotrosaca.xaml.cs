@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Posta.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,37 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class OpcijePotrosaca : Page
     {
+        Potrosac trenutni;
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            trenutni = (Potrosac)e.Parameter;
+        }
+
         public OpcijePotrosaca()
         {
             this.InitializeComponent();
+        }
+
+        private void bPregledRacuna_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PregledRacuna), trenutni);
+        }
+
+        private void bPracenjePaketa_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PracenjePaketa), this.DataContext);
+        }
+
+        private void bShop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Shop), this.DataContext);
+        }
+
+        private void bLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LogIn), this.DataContext);
         }
     }
 }

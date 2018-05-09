@@ -74,6 +74,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="ItemsSource" />
     </RootType>
     <RootType FullName="Posta.Forms.NaplataRacuna" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
@@ -84,6 +85,9 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Posta.Forms.PracenjePaketa" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Posta.Forms.PregledRacuna" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />

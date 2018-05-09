@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <Frame x:ConnectionId='1' Name="Frame">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -22,10 +22,11 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button x:ConnectionId='1' x:Name="button" Content="Pregled racuna" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="145"/>
-        <Button x:ConnectionId='2' x:Name="button_Copy" Content="Pracenje paketa" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145"/>
-        <Button x:ConnectionId='3' x:Name="button_Copy1" Content="Shop" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="3" VerticalAlignment="Top" Width="145"/>
-        <Button x:ConnectionId='4' x:Name="button_Copy2" Content="Log out" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="4" VerticalAlignment="Top" Width="145"/>
+        <Button x:ConnectionId='2' x:Name="bPregledRacuna" Content="Pregled racuna" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="145"                             />
+        <Button x:ConnectionId='3' x:Name="bPracenjePaketa" Content="Pracenje paketa" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145"                              />
+        <Button x:ConnectionId='4' x:Name="bShop" Content="Shop" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="3" VerticalAlignment="Top" Width="145"                    />
+        <Button x:ConnectionId='5' x:Name="bLogOut" Content="Log out" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="4" VerticalAlignment="Top" Width="145"                      />
     </Grid>
+    </Frame>
 </Page>
 

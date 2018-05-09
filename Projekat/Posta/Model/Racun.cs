@@ -1,16 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Posta.Model
 {
-    public class Racun : IRacun
+    public class Racun : IRacun, INotifyPropertyChanged
     {
         private int id;
         private int cijena;
         private bool stanje;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        public override string ToString()
+        {
+            string povratni = "ID: " + id.ToString() + " Cijena: " + cijena.ToString() + " Stanje: ";
+            if (stanje) povratni += " Placeno";
+            else povratni += "Nije placeno";
+            return povratni;
+        }
 
         public int Id
         {
@@ -22,6 +40,7 @@ namespace Posta.Model
             set
             {
                 id = value;
+                OnPropertyChanged("Id");
             }
         }
 
@@ -35,6 +54,7 @@ namespace Posta.Model
             set
             {
                 cijena = value;
+                OnPropertyChanged("Cijena");
             }
         }
 
@@ -48,6 +68,7 @@ namespace Posta.Model
             set
             {
                 stanje = value;
+                OnPropertyChanged("Stanje");
             }
         }
 
@@ -62,10 +83,6 @@ namespace Posta.Model
             this.Cijena = cijena;
             this.Stanje = stanje;
         }
-        /*
-        public int Id { get => id; set => id = value; }
-        public int Cijena { get => cijena; set => cijena = value; }
-        public bool Stanje { get => stanje; set => stanje = value; }*/
 
         public void GenerisiID()
         {

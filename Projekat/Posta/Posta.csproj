@@ -107,6 +107,7 @@
     <Compile Include="Model\Salterusa.cs" />
     <Compile Include="Model\Uposlenik.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\PregledRacunaViewModel.cs" />
     <Compile Include="View\AdministratorOpcije.xaml.cs">
       <DependentUpon>AdministratorOpcije.xaml</DependentUpon>
     </Compile>

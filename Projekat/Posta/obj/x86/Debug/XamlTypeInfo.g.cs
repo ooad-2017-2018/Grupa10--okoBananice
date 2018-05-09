@@ -132,7 +132,7 @@ namespace Posta.Posta_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[19];
+            _typeNameTable = new string[24];
             _typeNameTable[0] = "Posta.Forms.AdministratorOpcije";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -140,20 +140,25 @@ namespace Posta.Posta_XamlTypeInfo
             _typeNameTable[4] = "Posta.Forms.NaplataRacuna";
             _typeNameTable[5] = "Posta.Forms.PracenjePaketa";
             _typeNameTable[6] = "Posta.Forms.PregledRacuna";
-            _typeNameTable[7] = "Posta.Forms.PretragaPotrosaca";
-            _typeNameTable[8] = "Posta.Forms.RegistracijaPotrosaca";
-            _typeNameTable[9] = "Posta.Forms.RegistracijaUposlenika";
-            _typeNameTable[10] = "Posta.Forms.FormaPostara";
-            _typeNameTable[11] = "Posta.Forms.LogIn";
-            _typeNameTable[12] = "Posta.ViewModel.LoginViewModel";
-            _typeNameTable[13] = "Object";
-            _typeNameTable[14] = "Posta.Forms.OpcijePotrosaca";
-            _typeNameTable[15] = "Posta.Forms.OpcijeSalter";
-            _typeNameTable[16] = "Posta.Forms.Shop";
-            _typeNameTable[17] = "Posta.Forms.SlanjePaketa";
-            _typeNameTable[18] = "Posta.MainPage";
+            _typeNameTable[7] = "System.Collections.ObjectModel.ObservableCollection`1<Posta.Model.Racun>";
+            _typeNameTable[8] = "System.Collections.ObjectModel.Collection`1<Posta.Model.Racun>";
+            _typeNameTable[9] = "Object";
+            _typeNameTable[10] = "Posta.Model.Racun";
+            _typeNameTable[11] = "Int32";
+            _typeNameTable[12] = "Boolean";
+            _typeNameTable[13] = "Posta.Forms.PretragaPotrosaca";
+            _typeNameTable[14] = "Posta.Forms.RegistracijaPotrosaca";
+            _typeNameTable[15] = "Posta.Forms.RegistracijaUposlenika";
+            _typeNameTable[16] = "Posta.Forms.FormaPostara";
+            _typeNameTable[17] = "Posta.Forms.LogIn";
+            _typeNameTable[18] = "Posta.ViewModel.LoginViewModel";
+            _typeNameTable[19] = "Posta.Forms.OpcijePotrosaca";
+            _typeNameTable[20] = "Posta.Forms.OpcijeSalter";
+            _typeNameTable[21] = "Posta.Forms.Shop";
+            _typeNameTable[22] = "Posta.Forms.SlanjePaketa";
+            _typeNameTable[23] = "Posta.MainPage";
 
-            _typeTable = new global::System.Type[19];
+            _typeTable = new global::System.Type[24];
             _typeTable[0] = typeof(global::Posta.Forms.AdministratorOpcije);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -161,18 +166,23 @@ namespace Posta.Posta_XamlTypeInfo
             _typeTable[4] = typeof(global::Posta.Forms.NaplataRacuna);
             _typeTable[5] = typeof(global::Posta.Forms.PracenjePaketa);
             _typeTable[6] = typeof(global::Posta.Forms.PregledRacuna);
-            _typeTable[7] = typeof(global::Posta.Forms.PretragaPotrosaca);
-            _typeTable[8] = typeof(global::Posta.Forms.RegistracijaPotrosaca);
-            _typeTable[9] = typeof(global::Posta.Forms.RegistracijaUposlenika);
-            _typeTable[10] = typeof(global::Posta.Forms.FormaPostara);
-            _typeTable[11] = typeof(global::Posta.Forms.LogIn);
-            _typeTable[12] = typeof(global::Posta.ViewModel.LoginViewModel);
-            _typeTable[13] = typeof(global::System.Object);
-            _typeTable[14] = typeof(global::Posta.Forms.OpcijePotrosaca);
-            _typeTable[15] = typeof(global::Posta.Forms.OpcijeSalter);
-            _typeTable[16] = typeof(global::Posta.Forms.Shop);
-            _typeTable[17] = typeof(global::Posta.Forms.SlanjePaketa);
-            _typeTable[18] = typeof(global::Posta.MainPage);
+            _typeTable[7] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Posta.Model.Racun>);
+            _typeTable[8] = typeof(global::System.Collections.ObjectModel.Collection<global::Posta.Model.Racun>);
+            _typeTable[9] = typeof(global::System.Object);
+            _typeTable[10] = typeof(global::Posta.Model.Racun);
+            _typeTable[11] = typeof(global::System.Int32);
+            _typeTable[12] = typeof(global::System.Boolean);
+            _typeTable[13] = typeof(global::Posta.Forms.PretragaPotrosaca);
+            _typeTable[14] = typeof(global::Posta.Forms.RegistracijaPotrosaca);
+            _typeTable[15] = typeof(global::Posta.Forms.RegistracijaUposlenika);
+            _typeTable[16] = typeof(global::Posta.Forms.FormaPostara);
+            _typeTable[17] = typeof(global::Posta.Forms.LogIn);
+            _typeTable[18] = typeof(global::Posta.ViewModel.LoginViewModel);
+            _typeTable[19] = typeof(global::Posta.Forms.OpcijePotrosaca);
+            _typeTable[20] = typeof(global::Posta.Forms.OpcijeSalter);
+            _typeTable[21] = typeof(global::Posta.Forms.Shop);
+            _typeTable[22] = typeof(global::Posta.Forms.SlanjePaketa);
+            _typeTable[23] = typeof(global::Posta.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -212,17 +222,32 @@ namespace Posta.Posta_XamlTypeInfo
         private object Activate_4_NaplataRacuna() { return new global::Posta.Forms.NaplataRacuna(); }
         private object Activate_5_PracenjePaketa() { return new global::Posta.Forms.PracenjePaketa(); }
         private object Activate_6_PregledRacuna() { return new global::Posta.Forms.PregledRacuna(); }
-        private object Activate_7_PretragaPotrosaca() { return new global::Posta.Forms.PretragaPotrosaca(); }
-        private object Activate_8_RegistracijaPotrosaca() { return new global::Posta.Forms.RegistracijaPotrosaca(); }
-        private object Activate_9_RegistracijaUposlenika() { return new global::Posta.Forms.RegistracijaUposlenika(); }
-        private object Activate_10_FormaPostara() { return new global::Posta.Forms.FormaPostara(); }
-        private object Activate_11_LogIn() { return new global::Posta.Forms.LogIn(); }
-        private object Activate_12_LoginViewModel() { return new global::Posta.ViewModel.LoginViewModel(); }
-        private object Activate_14_OpcijePotrosaca() { return new global::Posta.Forms.OpcijePotrosaca(); }
-        private object Activate_15_OpcijeSalter() { return new global::Posta.Forms.OpcijeSalter(); }
-        private object Activate_16_Shop() { return new global::Posta.Forms.Shop(); }
-        private object Activate_17_SlanjePaketa() { return new global::Posta.Forms.SlanjePaketa(); }
-        private object Activate_18_MainPage() { return new global::Posta.MainPage(); }
+        private object Activate_7_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Posta.Model.Racun>(); }
+        private object Activate_8_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Posta.Model.Racun>(); }
+        private object Activate_10_Racun() { return new global::Posta.Model.Racun(); }
+        private object Activate_13_PretragaPotrosaca() { return new global::Posta.Forms.PretragaPotrosaca(); }
+        private object Activate_14_RegistracijaPotrosaca() { return new global::Posta.Forms.RegistracijaPotrosaca(); }
+        private object Activate_15_RegistracijaUposlenika() { return new global::Posta.Forms.RegistracijaUposlenika(); }
+        private object Activate_16_FormaPostara() { return new global::Posta.Forms.FormaPostara(); }
+        private object Activate_17_LogIn() { return new global::Posta.Forms.LogIn(); }
+        private object Activate_18_LoginViewModel() { return new global::Posta.ViewModel.LoginViewModel(); }
+        private object Activate_19_OpcijePotrosaca() { return new global::Posta.Forms.OpcijePotrosaca(); }
+        private object Activate_20_OpcijeSalter() { return new global::Posta.Forms.OpcijeSalter(); }
+        private object Activate_21_Shop() { return new global::Posta.Forms.Shop(); }
+        private object Activate_22_SlanjePaketa() { return new global::Posta.Forms.SlanjePaketa(); }
+        private object Activate_23_MainPage() { return new global::Posta.MainPage(); }
+        private void VectorAdd_7_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Posta.Model.Racun>)instance;
+            var newItem = (global::Posta.Model.Racun)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_8_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Posta.Model.Racun>)instance;
+            var newItem = (global::Posta.Model.Racun)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -273,88 +298,121 @@ namespace Posta.Posta_XamlTypeInfo
             case 6:   //  Posta.Forms.PregledRacuna
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_6_PregledRacuna;
+                userType.AddMemberName("Racuni");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Posta.Forms.PretragaPotrosaca
-                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_PretragaPotrosaca;
+            case 7:   //  System.Collections.ObjectModel.ObservableCollection`1<Posta.Model.Racun>
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Posta.Model.Racun>"));
+                userType.CollectionAdd = VectorAdd_7_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  System.Collections.ObjectModel.Collection`1<Posta.Model.Racun>
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_Collection;
+                userType.CollectionAdd = VectorAdd_8_Collection;
+                xamlType = userType;
+                break;
+
+            case 9:   //  Object
+                xamlType = new global::Posta.Posta_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Posta.Model.Racun
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_10_Racun;
+                userType.AddMemberName("Id");
+                userType.AddMemberName("Cijena");
+                userType.AddMemberName("Stanje");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Posta.Forms.RegistracijaPotrosaca
+            case 11:   //  Int32
+                xamlType = new global::Posta.Posta_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  Boolean
+                xamlType = new global::Posta.Posta_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Posta.Forms.PretragaPotrosaca
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_RegistracijaPotrosaca;
+                userType.Activator = Activate_13_PretragaPotrosaca;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Posta.Forms.RegistracijaUposlenika
+            case 14:   //  Posta.Forms.RegistracijaPotrosaca
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_RegistracijaUposlenika;
+                userType.Activator = Activate_14_RegistracijaPotrosaca;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Posta.Forms.FormaPostara
+            case 15:   //  Posta.Forms.RegistracijaUposlenika
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_FormaPostara;
+                userType.Activator = Activate_15_RegistracijaUposlenika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Posta.Forms.LogIn
+            case 16:   //  Posta.Forms.FormaPostara
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_LogIn;
+                userType.Activator = Activate_16_FormaPostara;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Posta.Forms.LogIn
+                userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_LogIn;
                 userType.AddMemberName("lvm");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Posta.ViewModel.LoginViewModel
+            case 18:   //  Posta.ViewModel.LoginViewModel
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Object
-                xamlType = new global::Posta.Posta_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 14:   //  Posta.Forms.OpcijePotrosaca
+            case 19:   //  Posta.Forms.OpcijePotrosaca
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_OpcijePotrosaca;
+                userType.Activator = Activate_19_OpcijePotrosaca;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Posta.Forms.OpcijeSalter
+            case 20:   //  Posta.Forms.OpcijeSalter
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_OpcijeSalter;
+                userType.Activator = Activate_20_OpcijeSalter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Posta.Forms.Shop
+            case 21:   //  Posta.Forms.Shop
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_Shop;
+                userType.Activator = Activate_21_Shop;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Posta.Forms.SlanjePaketa
+            case 22:   //  Posta.Forms.SlanjePaketa
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_SlanjePaketa;
+                userType.Activator = Activate_22_SlanjePaketa;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Posta.MainPage
+            case 23:   //  Posta.MainPage
                 userType = new global::Posta.Posta_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_MainPage;
+                userType.Activator = Activate_23_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -363,12 +421,52 @@ namespace Posta.Posta_XamlTypeInfo
         }
 
 
-        private object get_0_LogIn_lvm(object instance)
+        private object get_0_PregledRacuna_Racuni(object instance)
+        {
+            var that = (global::Posta.Forms.PregledRacuna)instance;
+            return that.Racuni;
+        }
+        private void set_0_PregledRacuna_Racuni(object instance, object Value)
+        {
+            var that = (global::Posta.Forms.PregledRacuna)instance;
+            that.Racuni = (global::System.Collections.ObjectModel.ObservableCollection<global::Posta.Model.Racun>)Value;
+        }
+        private object get_1_Racun_Id(object instance)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            return that.Id;
+        }
+        private void set_1_Racun_Id(object instance, object Value)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_2_Racun_Cijena(object instance)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            return that.Cijena;
+        }
+        private void set_2_Racun_Cijena(object instance, object Value)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            that.Cijena = (global::System.Int32)Value;
+        }
+        private object get_3_Racun_Stanje(object instance)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            return that.Stanje;
+        }
+        private void set_3_Racun_Stanje(object instance, object Value)
+        {
+            var that = (global::Posta.Model.Racun)instance;
+            that.Stanje = (global::System.Boolean)Value;
+        }
+        private object get_4_LogIn_lvm(object instance)
         {
             var that = (global::Posta.Forms.LogIn)instance;
             return that.lvm;
         }
-        private void set_0_LogIn_lvm(object instance, object Value)
+        private void set_4_LogIn_lvm(object instance, object Value)
         {
             var that = (global::Posta.Forms.LogIn)instance;
             that.lvm = (global::Posta.ViewModel.LoginViewModel)Value;
@@ -381,11 +479,35 @@ namespace Posta.Posta_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Posta.Forms.PregledRacuna.Racuni":
+                userType = (global::Posta.Posta_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Posta.Forms.PregledRacuna");
+                xamlMember = new global::Posta.Posta_XamlTypeInfo.XamlMember(this, "Racuni", "System.Collections.ObjectModel.ObservableCollection`1<Posta.Model.Racun>");
+                xamlMember.Getter = get_0_PregledRacuna_Racuni;
+                xamlMember.Setter = set_0_PregledRacuna_Racuni;
+                break;
+            case "Posta.Model.Racun.Id":
+                userType = (global::Posta.Posta_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Posta.Model.Racun");
+                xamlMember = new global::Posta.Posta_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_1_Racun_Id;
+                xamlMember.Setter = set_1_Racun_Id;
+                break;
+            case "Posta.Model.Racun.Cijena":
+                userType = (global::Posta.Posta_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Posta.Model.Racun");
+                xamlMember = new global::Posta.Posta_XamlTypeInfo.XamlMember(this, "Cijena", "Int32");
+                xamlMember.Getter = get_2_Racun_Cijena;
+                xamlMember.Setter = set_2_Racun_Cijena;
+                break;
+            case "Posta.Model.Racun.Stanje":
+                userType = (global::Posta.Posta_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Posta.Model.Racun");
+                xamlMember = new global::Posta.Posta_XamlTypeInfo.XamlMember(this, "Stanje", "Boolean");
+                xamlMember.Getter = get_3_Racun_Stanje;
+                xamlMember.Setter = set_3_Racun_Stanje;
+                break;
             case "Posta.Forms.LogIn.lvm":
                 userType = (global::Posta.Posta_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Posta.Forms.LogIn");
                 xamlMember = new global::Posta.Posta_XamlTypeInfo.XamlMember(this, "lvm", "Posta.ViewModel.LoginViewModel");
-                xamlMember.Getter = get_0_LogIn_lvm;
-                xamlMember.Setter = set_0_LogIn_lvm;
+                xamlMember.Getter = get_4_LogIn_lvm;
+                xamlMember.Setter = set_4_LogIn_lvm;
                 break;
             }
             return xamlMember;
