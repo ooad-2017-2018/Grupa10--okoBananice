@@ -53,7 +53,6 @@ namespace Posta.ViewModel
             set
             {
                 ime = value;
-
                 if (PropertyChanged != null)
                 {
                     PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Ime)));

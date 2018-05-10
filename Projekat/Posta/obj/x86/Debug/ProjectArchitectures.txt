@@ -1,1 +1,1 @@
-C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Posta.csproj;x86
+C:\Users\selma\Desktop\FAX\OOAD\Grupa10-CokoBananice\Projekat\Posta\Posta.csproj;x86

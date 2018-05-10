@@ -54,8 +54,8 @@ namespace Posta.Forms
 
         private void bPodaciPotrosaca_Click(object sender, RoutedEventArgs e)
         {
+            trazeni = avm.Trazeni;
             this.Frame.Navigate(typeof(DetaljiPotrosaca), trazeni);
-
         }
         private void bObrisiPotrosaca_Click(object sender, RoutedEventArgs e)
         {

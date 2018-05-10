@@ -24,9 +24,10 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class DetaljiPotrosaca : Page
     {
-        private DetaljiPotrosacaViewModel dpvm;
-        Potrosac trenutni;
+        private DetaljiPotrosacaViewModel dpvm = new DetaljiPotrosacaViewModel();
+        Potrosac trenutni = new Potrosac();
         private string navigacija;
+        
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -38,9 +39,9 @@ namespace Posta.Forms
 
         public DetaljiPotrosaca()
         {
-            this.InitializeComponent();
             dpvm = new DetaljiPotrosacaViewModel();
             this.DataContext = dpvm;
+            this.InitializeComponent();
         }
 
         private void bNazad_Click(object sender, RoutedEventArgs e)
@@ -52,5 +53,6 @@ namespace Posta.Forms
         {
 
         }
+        
     }
 }

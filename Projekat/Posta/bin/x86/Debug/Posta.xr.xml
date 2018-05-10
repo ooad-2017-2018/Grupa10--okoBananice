@@ -9,7 +9,6 @@
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Adresa" />
     <RootPropertyPathName Name="Prezime" />
-    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="Racuni" />
     <RootPropertyPathName Name="Pass" />
     <RootPropertyPathName Name="Radio" />
@@ -91,6 +90,9 @@
       <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Posta.Forms.AdministratorOpcije" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Posta.Forms.DetaljiPotrosaca" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />

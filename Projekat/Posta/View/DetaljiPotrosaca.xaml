@@ -24,12 +24,11 @@
             <RowDefinition Height="108*"/>
         </Grid.RowDefinitions>
         <Button x:Name="bNazad" Content="Nazad" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" Height="49" Width="62" Click="bNazad_Click"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Ime,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="Ime" VerticalAlignment="Top" Grid.Row="1" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Prezime,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="Prezime" VerticalAlignment="Top" Grid.Row="2" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox_Copy1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Adresa,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="Adresa" VerticalAlignment="Top" Grid.Row="3" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox_Copy2" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Email,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="E-mail" VerticalAlignment="Top" Grid.Row="4" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox_Copy3" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Jmbg,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" PlaceholderText="JMBG" VerticalAlignment="Top" Grid.Row="5" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox_Copy4" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=BrojTelefona,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  VerticalAlignment="Top" Grid.Row="6" Width="199" Height="32" TextChanged="textBox_TextChanged"/>
-
+        <TextBlock x:Name="tbIme" Grid.Column="1" HorizontalAlignment="Left" Margin="15,15,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{x:Bind dpvm.Ime,Mode=TwoWay}"  VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbPrezime" Grid.Column="1" HorizontalAlignment="Left" Margin="15,17,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Prezime,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbAdresa" Grid.Column="1" HorizontalAlignment="Left" Margin="14,21,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=Adresa,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbEmail" Grid.Column="1" HorizontalAlignment="Left" Margin="16,18,0,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Path=Email,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbJmbg" Grid.Column="1" HorizontalAlignment="Left" Margin="16,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Path=Jmbg,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbBrojTelefona" Grid.Column="1" HorizontalAlignment="Left" Margin="15,17,0,0" Grid.Row="6" TextWrapping="Wrap" Text="{Binding Path=BrojTelefona,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
     </Grid>
 </Page>
