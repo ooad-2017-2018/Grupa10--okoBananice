@@ -84,7 +84,7 @@ namespace Posta.ViewModel
         }
         private void obrisiPotrosaca()
         {
-
+            //Baza.Instanca.obrisiPotrosaca("123456789");
             Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
             ePosta.Instanca.obrisiPotrosaca(Trazeni);
 

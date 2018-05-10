@@ -1,4 +1,5 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace Posta.Model
         {
 
         }
+        List<Potrosaci> items = new List<Potrosaci>();
 
         IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
         IMobileServiceTable<Uposlenici> userTableObjUposlenici = App.MobileService.GetTable<Uposlenici>();
@@ -66,6 +68,38 @@ namespace Posta.Model
                 MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
                 msgDialogError.ShowAsync();
             }
+        }
+
+        public Potrosac dajPotrosaca(string jmbg)
+        {
+            dajIzBaze(jmbg);
+            Potrosac novi = new Potrosac();
+            novi.Ime = items[0].Ime;
+            novi.Prezime = items[0].Prezime;
+            novi.Adresa = items[0].Adresa;
+            novi.JMBG1 = items[0].Jmbg;
+            novi.Email = items[0].Email;
+            novi.BrojTelefona = items[0].BrojTelefona;
+            return novi;
+        }
+        private async Task<int> dajIzBaze(String jmbg)
+        {
+            IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
+            items = await userTableObj.Where(i => i.Jmbg.Equals(jmbg)).ToListAsync();
+            return 0;
+        }
+        public void obrisiPotrosaca(string jmbg)
+        {
+            Potrosac p = dajPotrosaca(jmbg);
+            brisi(p.JMBG1);
+        } 
+
+        private async Task<int> brisi(string jmbg)
+        {
+            JObject jo = new JObject();
+            jo.Add("Jmbg", jmbg);
+            await userTableObj.DeleteAsync(jo);
+            return 0;
         }
     }
 }
