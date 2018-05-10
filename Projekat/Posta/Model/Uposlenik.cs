@@ -14,7 +14,7 @@ namespace Posta.Model
         private string password;
         private string adresa;
         private DateTime datumRodjenja;
-
+        private string tipPosla;
         protected Uposlenik()
         {
 
@@ -97,14 +97,45 @@ namespace Posta.Model
                 datumRodjenja = value;
             }
         }
-        
+
+        public string TipPosla
+        {
+            get
+            {
+                return tipPosla;
+            }
+
+            set
+            {
+                tipPosla = value;
+            }
+        }
+
         //pomocni konstruktor
         public Uposlenik(string e, string p)
         {
             email = e;
             password = p;
         }
-
+        public Uposlenik(string ime, string prezime, string email, string password, string adresa, DateTime datumRodjenja, string tipPosla)
+        {
+            this.Ime = ime;
+            this.Prezime = prezime;
+            this.Email = email;
+            this.Password = password;
+            this.Adresa = adresa;
+            this.DatumRodjenja = datumRodjenja;
+            this.TipPosla = tipPosla; 
+        }
+        public Uposlenik(string ime, string prezime, string email, string password, string adresa, string tipPosla)
+        {
+            this.Ime = ime;
+            this.Prezime = prezime;
+            this.Email = email;
+            this.Password = password;
+            this.Adresa = adresa;
+            this.TipPosla = tipPosla;
+        }
         public Uposlenik(string ime, string prezime, string email, string password, string adresa, DateTime datumRodjenja)
         {
             this.Ime = ime;

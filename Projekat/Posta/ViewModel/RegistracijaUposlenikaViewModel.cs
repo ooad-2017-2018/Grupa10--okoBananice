@@ -12,7 +12,7 @@ namespace Posta.ViewModel
 {
     public class RegistracijaUposlenikaViewModel : INotifyPropertyChanged
     {
-        ePosta sveListe = ePosta.Instanca;
+        
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
@@ -216,14 +216,20 @@ namespace Posta.ViewModel
             if (radio)
             {
                 dodaj = new Postar();
+                dodaj.TipPosla = "Postar";
             }
-            else dodaj = new Salterusa();
+            else
+            {
+                dodaj = new Salterusa();
+                dodaj.TipPosla = "Salterusa";
+            }
             dodaj.Ime = ImeU;
             dodaj.Prezime = PrezimeU;
             dodaj.Password = Pass;
             dodaj.Email = EmailU;
             dodaj.Adresa = AdresaU;
             ePosta.Instanca.dodajUposlenika(dodaj);
+            Baza.Instanca.dodajUposlenka(dodaj);
         }
 
         public ICommand RegistrujUposlenikaCommand

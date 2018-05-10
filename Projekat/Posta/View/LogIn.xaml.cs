@@ -98,9 +98,6 @@ namespace Posta.Forms
             GlavniFrame.Navigate(typeof(RegistracijaUposlenika), this.DataContext);
         }
 
-        private void btnSpasi_Tapped_1(object sender, TappedRoutedEventArgs e)
-        {
-            
-        }
+     
     }
 }

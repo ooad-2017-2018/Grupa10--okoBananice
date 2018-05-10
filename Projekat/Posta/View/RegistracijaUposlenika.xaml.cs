@@ -54,5 +54,10 @@ namespace Posta.Forms
         {
             this.Frame.Navigate(typeof(LogIn), this.DataContext);
         }
+
+        private void bRegistracijaU_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

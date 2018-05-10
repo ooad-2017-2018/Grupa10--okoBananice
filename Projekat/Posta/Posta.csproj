@@ -107,6 +107,7 @@
     <Compile Include="Model\Potrosaci.cs" />
     <Compile Include="Model\Racun.cs" />
     <Compile Include="Model\Salterusa.cs" />
+    <Compile Include="Model\Uposlenici.cs" />
     <Compile Include="Model\Uposlenik.cs" />
     <Compile Include="ViewModel\AdministratorViewModel.cs" />
     <Compile Include="ViewModel\CommandHandler.cs" />
