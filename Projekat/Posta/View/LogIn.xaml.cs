@@ -28,7 +28,7 @@ namespace Posta.Forms
     {
         public LoginViewModel lvm { get; set; } = new LoginViewModel();
 
-        IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
+        
        
         public LogIn()
         {
@@ -100,24 +100,7 @@ namespace Posta.Forms
 
         private void btnSpasi_Tapped_1(object sender, TappedRoutedEventArgs e)
         {
-            try
-            {
-                Potrosaci obj = new Potrosaci();
-                obj.Ime = "Ilma";
-                obj.Prezime = "s";
-                obj.Adresa = "sova";
-                obj.Email = "sova";
-                obj.Jmbg = "123456789";
-                obj.BrojTelefona = "061741743";
-                userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
-                msgDialog.ShowAsync();
-            }
-            catch (Exception ex)
-            {
-                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
-                msgDialogError.ShowAsync();
-            }
+            
         }
     }
 }

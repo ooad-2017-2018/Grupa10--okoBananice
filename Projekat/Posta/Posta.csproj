@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\Baza.cs" />
     <Compile Include="Model\ePosta.cs" />
     <Compile Include="Model\IPosta.cs" />
     <Compile Include="Model\IPotrosac.cs" />
