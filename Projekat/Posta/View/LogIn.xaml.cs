@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Navigation;
 using Posta.ViewModel;
 using System.ComponentModel;
 using Posta.Model;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Posta.Forms
@@ -25,8 +27,9 @@ namespace Posta.Forms
     public sealed partial class LogIn : Page, INotifyPropertyChanged
     {
         public LoginViewModel lvm { get; set; } = new LoginViewModel();
-        
 
+        IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
+       
         public LogIn()
         {
             this.InitializeComponent();
@@ -95,5 +98,26 @@ namespace Posta.Forms
             GlavniFrame.Navigate(typeof(RegistracijaUposlenika), this.DataContext);
         }
 
+        private void btnSpasi_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                Potrosaci obj = new Potrosaci();
+                obj.Ime = "Ilma";
+                obj.Prezime = "s";
+                obj.Adresa = "sova";
+                obj.Email = "sova";
+                obj.Jmbg = "123456789";
+                obj.BrojTelefona = "061741743";
+                userTableObj.InsertAsync(obj);
+                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
+                msgDialog.ShowAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                msgDialogError.ShowAsync();
+            }
+        }
     }
 }

@@ -739,3 +739,11 @@ C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\qualifi
 C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\Posta.csproj.GenerateResource.Cache
+C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml

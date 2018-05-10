@@ -103,6 +103,7 @@
     <Compile Include="Model\Paket.cs" />
     <Compile Include="Model\Postar.cs" />
     <Compile Include="Model\Potrosac.cs" />
+    <Compile Include="Model\Potrosaci.cs" />
     <Compile Include="Model\Racun.cs" />
     <Compile Include="Model\Salterusa.cs" />
     <Compile Include="Model\Uposlenik.cs" />

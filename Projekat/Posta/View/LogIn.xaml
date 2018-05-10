@@ -32,6 +32,9 @@
             <TextBlock x:Name="textblock" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,114,50" Grid.Row="5" TextWrapping="Wrap" Text="Nemate account?" VerticalAlignment="Bottom"/>
             <Button x:Name="bRegistrujSe" Content="Registruj se" Grid.Column="1" HorizontalAlignment="Right" Margin="0,35,114,0" Grid.Row="5" VerticalAlignment="Top" Width="116" Click="bRegistrujSe_Click"/>
             <TextBlock x:Name="porukaGreske"  Text="Pogresni pristupni podaci!" Visibility="Collapsed" Grid.Column="1" HorizontalAlignment="Left" Margin="10,30,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.525" Width="220"/>
+            <Button x:Name="btnSpasi" Grid.Column="1" HorizontalAlignment="Left" Margin="53,57,0,0" VerticalAlignment="Top" Height="62" Width="155" Tapped="btnSpasi_Tapped_1"/>
+
+
 
 
 
