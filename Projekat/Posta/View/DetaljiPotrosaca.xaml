@@ -30,5 +30,24 @@
         <TextBlock x:Name="tbEmail" Grid.Column="1" HorizontalAlignment="Left" Margin="16,18,0,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Path=Email,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
         <TextBlock x:Name="tbJmbg" Grid.Column="1" HorizontalAlignment="Left" Margin="16,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Path=Jmbg,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
         <TextBlock x:Name="tbBrojTelefona" Grid.Column="1" HorizontalAlignment="Left" Margin="15,17,0,0" Grid.Row="6" TextWrapping="Wrap" Text="{Binding Path=BrojTelefona,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="30,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1">
+         
+            <Run FontWeight="Bold" Text="Ime:"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="30,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="3">
+            <Run FontWeight="Bold" Text="Adresa:"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="30,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-2.231,5.45" Grid.Row="2">
+            <Run FontWeight="Bold" Text="Prezime:"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="29,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="4">
+            <Run FontWeight="Bold" Text="E-mail:"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="30,24,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock4_SelectionChanged">
+            <Run FontWeight="Bold" Text="JMBG:"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="29,21,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top">
+            <Run FontWeight="Bold" Text="Broj telefona:"/>
+        </TextBlock>
     </Grid>
 </Page>

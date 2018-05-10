@@ -53,6 +53,10 @@ namespace Posta.Forms
         {
 
         }
-        
+
+        private void textBlock4_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
