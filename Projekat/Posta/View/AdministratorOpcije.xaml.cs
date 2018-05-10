@@ -55,11 +55,14 @@ namespace Posta.Forms
         private void bPodaciPotrosaca_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(DetaljiPotrosaca), trazeni);
+
         }
         private void bObrisiPotrosaca_Click(object sender, RoutedEventArgs e)
         {
             //implementirati pretragu
-            //brisanje iz liste i baze
+            //brisanje iz baze
+            
+
         }
 
         private void bPrikazRacuna_Click(object sender, RoutedEventArgs e)

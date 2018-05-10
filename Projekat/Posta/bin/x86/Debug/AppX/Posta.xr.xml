@@ -3,6 +3,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="PretraziPotrosacaCommand" />
     <RootPropertyPathName Name="Found" />
+    <RootPropertyPathName Name="ObrisiPotrosacaCommand" />
     <RootPropertyPathName Name="Jmbg" />
     <RootPropertyPathName Name="BrojTelefona" />
     <RootPropertyPathName Name="Email" />

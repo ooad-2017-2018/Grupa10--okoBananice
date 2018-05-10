@@ -82,6 +82,32 @@ namespace Posta.ViewModel
                 }
             }
         }
+        private void obrisiPotrosaca()
+        {
+
+            Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
+            ePosta.Instanca.obrisiPotrosaca(Trazeni);
+
+            if (Trazeni != null)
+            {
+                Found = true;
+             
+                var dialog1 = new MessageDialog("Uspjesno izbrisan!");
+                
+                dialog1.ShowAsync();
+            }
+            else
+            {
+                Found = false;
+                var dialog1 = new MessageDialog("Nije obrisan potrosac.");
+                dialog1.ShowAsync();
+            }
+        }
+
+        public ICommand ObrisiPotrosacaCommand
+        {
+            get { return new CommandHandler(() => this.obrisiPotrosaca()); }
+        }
 
         public void pretraga()
         {

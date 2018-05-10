@@ -80,6 +80,7 @@ namespace Posta.Model
             SviPotrosaci = new List<Potrosac>();
             SviPaketi = new List<Paket>();
             SviRacuni = new List<Racun>();
+     
         }
 
         public Potrosac dajPotrosaca(string jmbg)
@@ -87,7 +88,7 @@ namespace Posta.Model
             Potrosac p = null;
             try
             {
-                p = sviPotrosaci.Find((Potrosac i) => i.JMBG1.Equals(jmbg));
+                p = SviPotrosaci.Find((Potrosac i) => i.JMBG1.Equals(jmbg));
             }
             catch(Exception)
             {
@@ -103,12 +104,18 @@ namespace Posta.Model
 
         public void dodajPotrosaca(Potrosac p)
         {
-            sviPotrosaci.Add(p);
+            SviPotrosaci.Add(p);
         }
 
         public void dodajUposlenika(Uposlenik u)
         {
             SviUposlenici.Add(u);
+        }
+        public void obrisiPotrosaca(Potrosac p)
+        {
+            SviPotrosaci.Remove(p);
+               
+            
         }
     }
 }
