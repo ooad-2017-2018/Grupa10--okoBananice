@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Posta.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,6 +27,10 @@ namespace Posta.Forms
         {
             this.InitializeComponent();
         }
-        
+
+        private void bRegistracijaPotrosaca_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

@@ -13,22 +13,9 @@ namespace Posta.ViewModel
 {
     public class AdministratorViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
+        #region Atributi
         private bool found;
-
         private Potrosac trazeni;
-        public AdministratorViewModel()
-        {
-
-        }
-
         private string jmbg;
 
         public string Jmbg
@@ -82,6 +69,22 @@ namespace Posta.ViewModel
                 }
             }
         }
+#endregion
+
+        public AdministratorViewModel()
+        {
+
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        
         private void obrisiPotrosaca()
         {
             //Baza.Instanca.obrisiPotrosaca("123456789");
@@ -109,22 +112,27 @@ namespace Posta.ViewModel
             get { return new CommandHandler(() => this.obrisiPotrosaca()); }
         }
 
-        public void pretraga()
+        private object locker = new object();
+
+        public async void pretraga()
         {
-            Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
+            Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
+            
             if (Trazeni != null)
             {
                 Found = true;
                 var dialog = new MessageDialog("Uspjesno pronadjen potrosac!");
-                dialog.ShowAsync();
+                await dialog.ShowAsync();
             }
             else
             {
                 Found = false;
                 var dialog = new MessageDialog("Nije pronadjen potrosac.");
-                dialog.ShowAsync();
+                await dialog.ShowAsync();
             }
+                
         }
+
 
 
 

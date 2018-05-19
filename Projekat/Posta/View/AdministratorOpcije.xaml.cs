@@ -73,5 +73,10 @@ namespace Posta.Forms
             parametri.Add("Admin");
             this.Frame.Navigate(typeof(PregledRacuna), parametri);
         }
+
+        private async void bPretraga_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

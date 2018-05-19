@@ -9,8 +9,10 @@ using Windows.UI.Popups;
 
 namespace Posta.Model
 {
+    
     public class Baza
     {
+        #region Pattern
         public static Baza bazaInstanca;
         public static Baza Instanca
         {
@@ -23,10 +25,12 @@ namespace Posta.Model
         {
 
         }
-        List<Potrosaci> items = new List<Potrosaci>();
+        #endregion
 
-        IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
-        IMobileServiceTable<Uposlenici> userTableObjUposlenici = App.MobileService.GetTable<Uposlenici>();
+        List<Potrosaci> items = new List<Potrosaci>();
+        IMobileServiceTable<Potrosaci> tabelaPotrosaci = App.MobileService.GetTable<Potrosaci>();
+        IMobileServiceTable<Uposlenici> tabelaUposlenici = App.MobileService.GetTable<Uposlenici>();
+
         public void dodajPotrosaca(Potrosac p)
         {
             try
@@ -38,7 +42,8 @@ namespace Posta.Model
                 obj.Email = p.Email;
                 obj.Jmbg = p.JMBG1;
                 obj.BrojTelefona = p.BrojTelefona;
-                userTableObj.InsertAsync(obj);
+                tabelaPotrosaci.InsertAsync(obj);
+
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
                 msgDialog.ShowAsync();
             }
@@ -59,7 +64,7 @@ namespace Posta.Model
                 obj.Email = p.Email;
                 obj.Password = p.Password;
                 obj.TipPosla = p.TipPosla;
-                userTableObjUposlenici.InsertAsync(obj);
+                tabelaUposlenici.InsertAsync(obj);
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
                 msgDialog.ShowAsync();
             }
@@ -70,35 +75,40 @@ namespace Posta.Model
             }
         }
 
-        public Potrosac dajPotrosaca(string jmbg)
+        public async Task<Potrosac> dajPotrosaca(string jmbg)
         {
-            dajIzBaze(jmbg);
+            items.AddRange(await tabelaPotrosaci.Where(i => i.Jmbg == jmbg).ToListAsync());
+
             Potrosac novi = new Potrosac();
-            novi.Ime = items[0].Ime;
-            novi.Prezime = items[0].Prezime;
-            novi.Adresa = items[0].Adresa;
-            novi.JMBG1 = items[0].Jmbg;
-            novi.Email = items[0].Email;
-            novi.BrojTelefona = items[0].BrojTelefona;
-            return novi;
+            try
+            {
+                novi.Ime = items[0].Ime;
+                novi.Prezime = items[0].Prezime;
+                novi.Adresa = items[0].Adresa;
+                novi.JMBG1 = items[0].Jmbg;
+                novi.Email = items[0].Email;
+                novi.BrojTelefona = items[0].BrojTelefona;
+                return novi;
+            }
+            catch(Exception)
+            {
+                
+            }
+            return null;
         }
-        private async Task<int> dajIzBaze(String jmbg)
-        {
-            IMobileServiceTable<Potrosaci> userTableObj = App.MobileService.GetTable<Potrosaci>();
-            items = await userTableObj.Where(i => i.Jmbg.Equals(jmbg)).ToListAsync();
-            return 0;
-        }
+        
+        
         public void obrisiPotrosaca(string jmbg)
         {
-            Potrosac p = dajPotrosaca(jmbg);
-            brisi(p.JMBG1);
+           // Potrosac p = dajPotrosaca(jmbg);
+           // brisi(p.JMBG1);
         } 
 
         private async Task<int> brisi(string jmbg)
         {
             JObject jo = new JObject();
             jo.Add("Jmbg", jmbg);
-            await userTableObj.DeleteAsync(jo);
+            await tabelaPotrosaci.DeleteAsync(jo);
             return 0;
         }
     }

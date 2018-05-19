@@ -26,7 +26,7 @@
         <Button x:ConnectionId='1' x:Name="button" Content="Registracija paketa" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="145"/>
         <Button x:ConnectionId='2' x:Name="button_Copy2" Content="Log out" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="4" VerticalAlignment="Top" Width="145"/>
         <Button x:ConnectionId='3' x:Name="button_Copy" Content="Naplata racuna" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145"/>
-        <Button x:ConnectionId='4' x:Name="button_Copy1" Content="Registracija potrosaca" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="3" VerticalAlignment="Top" Width="145" FontSize="13"/>
+        <Button x:ConnectionId='4' x:Name="bRegistracijaPotrosaca" Content="Registracija potrosaca" Grid.Column="1" HorizontalAlignment="Left" Margin="37,24,0,0" Grid.Row="3" VerticalAlignment="Top" Width="145" FontSize="13"                                     />
 
     </Grid>
 </Page>
