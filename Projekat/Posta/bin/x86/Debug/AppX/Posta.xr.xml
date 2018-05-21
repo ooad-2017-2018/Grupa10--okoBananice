@@ -10,8 +10,13 @@
     <RootPropertyPathName Name="Adresa" />
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="Racuni" />
+    <RootPropertyPathName Name="RegistrujPotrosacaCommand" />
+    <RootPropertyPathName Name="BRegistracija" />
+    <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="Pass" />
-    <RootPropertyPathName Name="Radio" />
+    <RootPropertyPathName Name="Salter" />
+    <RootPropertyPathName Name="Postar" />
     <RootPropertyPathName Name="RegistrujUposlenikaCommand" />
     <RootPropertyPathName Name="AdresaU" />
     <RootPropertyPathName Name="EmailU" />
@@ -133,6 +138,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootEvent Name="DateChanged" />
     </RootType>
     <RootType FullName="Posta.Forms.RegistracijaPotrosaca" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">

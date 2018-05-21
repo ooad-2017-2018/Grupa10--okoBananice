@@ -115,6 +115,7 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\PregledRacunaViewModel.cs" />
     <Compile Include="ViewModel\RadioButtonConverter.cs" />
+    <Compile Include="ViewModel\RegistracijaPotrosacaViewModel.cs" />
     <Compile Include="ViewModel\RegistracijaUposlenikaViewModel.cs" />
     <Compile Include="ViewModel\ShopViewModel.cs" />
     <Compile Include="View\AdministratorOpcije.xaml.cs">

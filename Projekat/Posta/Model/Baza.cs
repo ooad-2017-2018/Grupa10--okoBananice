@@ -31,7 +31,7 @@ namespace Posta.Model
         IMobileServiceTable<Potrosaci> tabelaPotrosaci = App.MobileService.GetTable<Potrosaci>();
         IMobileServiceTable<Uposlenici> tabelaUposlenici = App.MobileService.GetTable<Uposlenici>();
 
-        public void dodajPotrosaca(Potrosac p)
+        public async Task<bool> dodajPotrosaca(Potrosac p)
         {
             try
             {
@@ -42,18 +42,18 @@ namespace Posta.Model
                 obj.Email = p.Email;
                 obj.Jmbg = p.JMBG1;
                 obj.BrojTelefona = p.BrojTelefona;
-                tabelaPotrosaci.InsertAsync(obj);
+                await Task.Run(() => tabelaPotrosaci.InsertAsync(obj));
 
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
-                msgDialog.ShowAsync();
             }
             catch (Exception ex)
             {
-                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
-                msgDialogError.ShowAsync();
+                throw ex;
+                //MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                //msgDialogError.ShowAsync();
             }
+            return true;
         }
-        public void dodajUposlenka(Uposlenik p)
+        public async Task<bool> dodajUposlenka(Uposlenik p)
         {
             try
             {
@@ -63,20 +63,21 @@ namespace Posta.Model
                 obj.Adresa = p.Adresa;
                 obj.Email = p.Email;
                 obj.Password = p.Password;
+                obj.DatumRodjenja = p.DatumRodjenja.ToString();
                 obj.TipPosla = p.TipPosla;
-                tabelaUposlenici.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
-                msgDialog.ShowAsync();
+                await Task.Run(() => tabelaUposlenici.InsertAsync(obj));
             }
             catch (Exception ex)
             {
-                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
-                msgDialogError.ShowAsync();
+                throw ex;
+                
             }
+            return true;
         }
 
         public async Task<Potrosac> dajPotrosaca(string jmbg)
         {
+            items = new List<Potrosaci>();
             items.AddRange(await tabelaPotrosaci.Where(i => i.Jmbg == jmbg).ToListAsync());
 
             Potrosac novi = new Potrosac();
@@ -98,18 +99,21 @@ namespace Posta.Model
         }
         
         
-        public void obrisiPotrosaca(string jmbg)
+        public async Task<bool> obrisiPotrosaca(string jmbg)
         {
-           // Potrosac p = dajPotrosaca(jmbg);
-           // brisi(p.JMBG1);
+            try
+            {
+                List<Potrosaci> temp = new List<Potrosaci>();
+                temp.AddRange(await tabelaPotrosaci.Where(i => i.Jmbg == jmbg).ToListAsync());
+                
+                await Task.Run(() => tabelaPotrosaci.DeleteAsync(temp[0]));
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
         } 
-
-        private async Task<int> brisi(string jmbg)
-        {
-            JObject jo = new JObject();
-            jo.Add("Jmbg", jmbg);
-            await tabelaPotrosaci.DeleteAsync(jo);
-            return 0;
-        }
+        
     }
 }

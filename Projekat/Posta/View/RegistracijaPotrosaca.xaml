@@ -28,23 +28,23 @@
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ime:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbI" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ime:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbP" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Datum rodjenja:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy2" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="JMBG:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy3" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Broj telefona:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy4" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy5" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Adresa stanovanja:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy6" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" TextWrapping="Wrap" Text="Lozinka:" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy1" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy2" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy3" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy4" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <TextBox x:Name="textBox_Copy5" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-        <CalendarDatePicker Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="160"/>
-        <Button x:Name="button" Content="Registracija" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="160"/>
-        <Button x:Name="button1" Content="Nazad" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="100"/>
+        <TextBox x:Name="tbIme" Text="{Binding Path=Ime,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbPrezime" Text="{Binding Path=Prezime,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbJmbg"  Text="{Binding Path=Jmbg,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbBrojTel" Text="{Binding Path=BrojTelefona,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbAdresa" Text="{Binding Path=Adresa,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbEmail" Text="{Binding Path=Email,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="tbPass" Text="{Binding Path=Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <CalendarDatePicker x:Name="kalendar" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="160" DateChanged="CalendarDatePicker_DateChanged"/>
+        <Button x:Name="bReg"  Command="{Binding RegistrujPotrosacaCommand}" IsEnabled="{Binding BRegistracija,Mode=TwoWay}" Content="Registracija" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="160"/>
+        <Button x:Name="bNazad" Content="Nazad" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="100" Click="bNazad_Click"/>
     </Grid>
 </Page>

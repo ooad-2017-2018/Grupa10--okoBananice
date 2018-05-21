@@ -7,6 +7,7 @@ using System.Text;
 
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Popups;
 
 namespace Posta.ViewModel
 {
@@ -30,9 +31,29 @@ namespace Posta.ViewModel
         private DateTime datumRodjenja;
         private string pomocniJMBG;
         private string tipPosla;
-        private bool radio;
+        private bool postar;
+        private bool salter;
+        private bool bRegistracija;
 
         #region GetteriSetteri
+
+        public bool BRegistracija
+        {
+            get
+            {
+                return bRegistracija;
+            }
+
+            set
+            {
+                bRegistracija = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(BRegistracija)));
+                }
+            }
+        }
+
         public string ImeU
         {
             get
@@ -184,6 +205,41 @@ namespace Posta.ViewModel
             }
         }
 
+
+        public bool Salter
+        {
+            get
+            {
+                return salter;
+            }
+
+            set
+            {
+                salter = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Salter)));
+                }
+            }
+        }
+
+        public bool Postar
+        {
+            get
+            {
+                return postar;
+            }
+
+            set
+            {
+                postar = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Postar)));
+                }
+            }
+        }
+
         #endregion
 
         public RegistracijaUposlenikaViewModel()
@@ -196,63 +252,58 @@ namespace Posta.ViewModel
             datumRodjenja = DateTime.Now;
             tipPosla = "";
             pass = "";
+            BRegistracija = true;
         }
+        
 
-        public bool validacijaJMBG()
+        private async void registrujUposlenika()
         {
-            //vraca true ako nije ispunjena validacija
-            //vraca false ako jeste
-            bool vracam = true;
-            pomocniJMBG = datumRodjenja.Date.ToString();
-            if (JMBG.Length != 13) return false;
-            if (pomocniJMBG[0].Equals(JMBG[2]) && pomocniJMBG[1].Equals(JMBG[3]) && pomocniJMBG[3].Equals(JMBG[0]) && pomocniJMBG[4].Equals(JMBG[1]) && pomocniJMBG[7].Equals(JMBG[4]) && pomocniJMBG[8].Equals(JMBG[5]) && pomocniJMBG[9].Equals(JMBG[6]))
-                return false;
-            return vracam;
-        }
-
-        private void registrujUposlenika()
-        {
-            Uposlenik dodaj = null;
-            if (radio)
+            try
             {
-                dodaj = new Postar();
-                dodaj.TipPosla = "Postar";
+                BRegistracija = false;
+                Uposlenik dodaj = null;
+                if (Postar)
+                {
+                    dodaj = new Postar();
+                    dodaj.TipPosla = "Postar";
+                }
+                else if (Salter)
+                {
+                    dodaj = new Salterusa();
+                    dodaj.TipPosla = "Salterusa";
+                }
+                else
+                {
+                    throw new Exception("Morate oznaciti tip posla!");
+                }
+                dodaj.Ime = ImeU;
+                dodaj.Prezime = PrezimeU;
+                dodaj.Password = Pass;
+                dodaj.Email = EmailU;
+                dodaj.Adresa = AdresaU;
+                dodaj.DatumRodjenja = DatumRodjenja;
+                //ePosta.Instanca.dodajUposlenika(dodaj);
+                
+                bool result = await Task.Run(() => Baza.Instanca.dodajUposlenka(dodaj));
+                if (result)
+                {
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
+                    msgDialog.ShowAsync();
+                }
             }
-            else
+            catch(Exception e)
             {
-                dodaj = new Salterusa();
-                dodaj.TipPosla = "Salterusa";
+                var message = new MessageDialog(e.Message);
+                message.ShowAsync();
             }
-            dodaj.Ime = ImeU;
-            dodaj.Prezime = PrezimeU;
-            dodaj.Password = Pass;
-            dodaj.Email = EmailU;
-            dodaj.Adresa = AdresaU;
-            ePosta.Instanca.dodajUposlenika(dodaj);
-            Baza.Instanca.dodajUposlenka(dodaj);
+            BRegistracija = true;
         }
-
+        
         public ICommand RegistrujUposlenikaCommand
         {
             get { return new CommandHandler(() => this.registrujUposlenika()); }
         }
-
-        public bool Radio
-        {
-            get
-            {
-                return radio;
-            }
-
-            set
-            {
-                radio = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Radio)));
-                }
-            }
-        }
+        
     }
 
 }

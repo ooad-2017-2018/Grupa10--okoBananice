@@ -23,14 +23,28 @@ namespace Posta.Forms
     /// </summary>
     public sealed partial class OpcijeSalter : Page
     {
+        Uposlenik trenutni;
+
         public OpcijeSalter()
         {
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            trenutni = (Uposlenik)e.Parameter;
+        }
+
         private void bRegistracijaPotrosaca_Click(object sender, RoutedEventArgs e)
         {
-            
+            Frame.Navigate(typeof(RegistracijaPotrosaca), trenutni);
         }
+
+        private void bLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LogIn), this.DataContext);
+        }
+
     }
 }

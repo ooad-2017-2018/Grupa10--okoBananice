@@ -85,12 +85,27 @@ namespace Posta.ViewModel
         }
 
         
-        private void obrisiPotrosaca()
+        private async void obrisiPotrosaca()
         {
-            //Baza.Instanca.obrisiPotrosaca("123456789");
-            Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
-            ePosta.Instanca.obrisiPotrosaca(Trazeni);
+            bool flag = await Task.Run(() => Baza.Instanca.obrisiPotrosaca(Jmbg));
 
+            if (flag)
+            {
+                Found = false;
+                Trazeni = null;
+                var dialog1 = new MessageDialog("Uspjesno izbrisan!");
+                dialog1.ShowAsync();
+            }
+            else
+            {
+                var dialog1 = new MessageDialog("Nije obrisan potrosac.");
+                dialog1.ShowAsync();
+            }
+
+            //Baza.Instanca.obrisiPotrosaca("123456789");
+            //Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
+            //ePosta.Instanca.obrisiPotrosaca(Trazeni);
+            /*
             if (Trazeni != null)
             {
                 Found = true;
@@ -104,31 +119,37 @@ namespace Posta.ViewModel
                 Found = false;
                 var dialog1 = new MessageDialog("Nije obrisan potrosac.");
                 dialog1.ShowAsync();
-            }
+            }*/
         }
 
         public ICommand ObrisiPotrosacaCommand
         {
             get { return new CommandHandler(() => this.obrisiPotrosaca()); }
         }
-
-        private object locker = new object();
-
+        
         public async void pretraga()
         {
-            Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
-            
-            if (Trazeni != null)
+            try
             {
-                Found = true;
-                var dialog = new MessageDialog("Uspjesno pronadjen potrosac!");
-                await dialog.ShowAsync();
+                Trazeni = null;
+                Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
+                
+                if (Trazeni != null)
+                {
+                    Found = true;
+                    var dialog = new MessageDialog("Uspjesno pronadjen potrosac!");
+                    await dialog.ShowAsync();
+                }
+                else
+                {
+                    Found = false;
+                    var dialog = new MessageDialog("Nije pronadjen potrosac.");
+                    await dialog.ShowAsync();
+                }
             }
-            else
+            catch(Exception)
             {
-                Found = false;
-                var dialog = new MessageDialog("Nije pronadjen potrosac.");
-                await dialog.ShowAsync();
+
             }
                 
         }

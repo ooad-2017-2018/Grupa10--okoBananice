@@ -59,5 +59,11 @@ namespace Posta.Forms
         {
 
         }
+
+        private void kDatumRodjenja_DateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
+        {
+            DateTimeOffset what = kDatumRodjenja.Date.Value;
+            regUpo.DatumRodjenja = what.DateTime;
+        }
     }
 }
