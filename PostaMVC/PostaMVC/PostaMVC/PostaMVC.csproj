@@ -45,11 +45,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -200,6 +200,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PaketsController.cs" />
+    <Compile Include="Controllers\PotrosacsController.cs" />
+    <Compile Include="Controllers\RacunsController.cs" />
+    <Compile Include="Controllers\UposleniksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -286,6 +290,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Potrosacs\Create.cshtml" />
+    <Content Include="Views\Potrosacs\Delete.cshtml" />
+    <Content Include="Views\Potrosacs\Details.cshtml" />
+    <Content Include="Views\Potrosacs\Edit.cshtml" />
+    <Content Include="Views\Potrosacs\Index.cshtml" />
+    <Content Include="Views\Uposleniks\Create.cshtml" />
+    <Content Include="Views\Uposleniks\Delete.cshtml" />
+    <Content Include="Views\Uposleniks\Details.cshtml" />
+    <Content Include="Views\Uposleniks\Edit.cshtml" />
+    <Content Include="Views\Uposleniks\Index.cshtml" />
+    <Content Include="Views\Pakets\Create.cshtml" />
+    <Content Include="Views\Pakets\Delete.cshtml" />
+    <Content Include="Views\Pakets\Details.cshtml" />
+    <Content Include="Views\Pakets\Edit.cshtml" />
+    <Content Include="Views\Pakets\Index.cshtml" />
+    <Content Include="Views\Racuns\Create.cshtml" />
+    <Content Include="Views\Racuns\Delete.cshtml" />
+    <Content Include="Views\Racuns\Details.cshtml" />
+    <Content Include="Views\Racuns\Edit.cshtml" />
+    <Content Include="Views\Racuns\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

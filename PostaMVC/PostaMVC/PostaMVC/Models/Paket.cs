@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,24 @@ namespace Posta.Model
 {
     public class Paket
     {
+        [ScaffoldColumn(false)]
+        public int id { get; set; }
+
+        [Required]
+        public Potrosac posiljaoc { get; set; }
+
+        [Required]
+        public string grad { get; set; }
+        public string drzava { get; set; }
+
+        [Required]
+        [Range(0.01,100000,ErrorMessage ="Cijena mora biti veca od nule")]
+        public double cijena { get; set; }
+        [Required]
+        public double tezina { get; set; }
+
+
+        /*
         private int id;
         private Potrosac posiljaoc;
         private string grad;
@@ -88,13 +107,13 @@ namespace Posta.Model
             {
                 tezina = value;
             }
-        }
+        }*/
 
-        public Paket()
+        /*public Paket()
         {
 
         }
-
+        
         public Paket(int id, Potrosac posiljaoc, string grad, string drzava, double cijena, double tezina)
         {
             this.Id = id;
@@ -104,7 +123,7 @@ namespace Posta.Model
             this.Cijena = cijena;
             this.Tezina = tezina;
         }
-
+        */
        /* public int Id { get => id; set => id = value; }
         public Potrosac Posiljaoc { get => posiljaoc; set => posiljaoc = value; }
         public string Grad { get => grad; set => grad = value; }

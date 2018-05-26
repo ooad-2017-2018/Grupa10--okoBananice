@@ -8,6 +8,7 @@ namespace Posta.Model
 {
     public class Salterusa : Uposlenik
     {
+        /*
         public Salterusa() : base ()
         {
 
@@ -22,7 +23,7 @@ namespace Posta.Model
         {
 
         }
-
+        */
         /*public void DodajPotrosaca(Potrosac p)
         {
 

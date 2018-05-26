@@ -1,0 +1,50 @@
+﻿@model Posta.Model.Paket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.grad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.drzava)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.drzava)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tezina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tezina)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

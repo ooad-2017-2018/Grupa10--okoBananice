@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,15 @@ namespace Posta.Model
 {
     public class Racun 
     {
-        private int id;
+        [ScaffoldColumn(false)]
+        public int id { get; set; }
+        [Required]
+        public int cijena { get; set; }
+        [Required]
+        public bool stanje { get; set; }
+
+
+        /*private int id;
         private int cijena;
         private bool stanje;
 
@@ -29,7 +38,7 @@ namespace Posta.Model
             else povratni += "Nije placeno";
             return povratni;
         }*/
-
+        /*
         public int Id
         {
             get
@@ -83,7 +92,7 @@ namespace Posta.Model
             this.Cijena = cijena;
             this.Stanje = stanje;
         }
-
+        */
         /*public void GenerisiID()
         {
             throw new NotImplementedException();

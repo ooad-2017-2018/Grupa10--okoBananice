@@ -8,6 +8,8 @@ namespace Posta.Model
 {
     public class Postar : Uposlenik
     {
+
+        /*
         public Postar() : base()
         {
 
@@ -22,7 +24,7 @@ namespace Posta.Model
         public Postar(string e, string p) : base(e,p)
         {
 
-        }
+        }*/
 
 /*        public void PregledPaketa(Paket p)
         {

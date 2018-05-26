@@ -9,6 +9,27 @@ namespace Posta.Model
 {
     public class Potrosac
     {
+        [ScaffoldColumn(false)]
+        public string id { get; set; }
+
+        [Required]
+        public string ime { get; set; }
+        [Required]
+        public string prezime { get; set; }
+        public string brojTelefona { get; set; }
+        public string adresa { get; set; }
+
+        [Required]
+        public string JMBG { get; set; }
+        [Required]
+        public string email { get; set; }
+        [Required]
+        public string password { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        public List<Racun> sviRacuni { get; set; }
+        public List<Paket> sviPaketi { get; set; }
+
+        /*
         private string id;
         private string ime;
         private string prezime;
@@ -190,7 +211,7 @@ namespace Posta.Model
             SviRacuni = new List<Racun>();
             SviPaketi = new List<Paket>();
         }
-
+        */
        /* public void DodajRacun(Racun r)
         {
             SviRacuni.Add(r);

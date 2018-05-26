@@ -9,6 +9,24 @@ namespace Posta.Model
 {
     public abstract class Uposlenik
     {
+        [ScaffoldColumn(false)]
+        public string id { get; set; }
+        [Required]
+        public string ime { get; set; }
+        [Required]
+        public string prezime { get; set; }
+        [Required]
+        public string email { get; set; }
+        [Required]
+        public string password { get; set; }
+        public string adresa { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        [Required]
+        public string tipPosla { get; set; }
+
+
+
+        /*
         [Key]
         private string id;
         private string ime;
@@ -162,6 +180,6 @@ namespace Posta.Model
             this.Adresa = adresa;
             this.DatumRodjenja = datumRodjenja;
         }
-
+        */
     }
 }
