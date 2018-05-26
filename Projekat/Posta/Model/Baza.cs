@@ -30,9 +30,9 @@ namespace Posta.Model
         List<Potrosaci> items = new List<Potrosaci>();
         IMobileServiceTable<Potrosaci> tabelaPotrosaci = App.MobileService.GetTable<Potrosaci>();
         IMobileServiceTable<Uposlenici> tabelaUposlenici = App.MobileService.GetTable<Uposlenici>();
-
+        
         public async Task<bool> dodajPotrosaca(Potrosac p)
-        {
+        {/*
             try
             {
                 Potrosaci obj = new Potrosaci();
@@ -50,11 +50,11 @@ namespace Posta.Model
                 throw ex;
                 //MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
                 //msgDialogError.ShowAsync();
-            }
+            }*/
             return true;
         }
         public async Task<bool> dodajUposlenka(Uposlenik p)
-        {
+        {/*
             try
             {
                 Uposlenici obj = new Uposlenici();
@@ -71,12 +71,13 @@ namespace Posta.Model
             {
                 throw ex;
                 
-            }
+            }*/
             return true;
         }
 
         public async Task<Potrosac> dajPotrosaca(string jmbg)
         {
+        /*
             items = new List<Potrosaci>();
             items.AddRange(await tabelaPotrosaci.Where(i => i.Jmbg == jmbg).ToListAsync());
 
@@ -94,13 +95,14 @@ namespace Posta.Model
             catch(Exception)
             {
                 
-            }
+            }*/
             return null;
         }
         
         
         public async Task<bool> obrisiPotrosaca(string jmbg)
         {
+        /*
             try
             {
                 List<Potrosaci> temp = new List<Potrosaci>();
@@ -112,7 +114,8 @@ namespace Posta.Model
             catch(Exception)
             {
                 return false;
-            }
+            }*/
+        return false;
         } 
         
     }

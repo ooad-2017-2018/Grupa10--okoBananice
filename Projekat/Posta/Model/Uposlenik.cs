@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,8 @@ namespace Posta.Model
 {
     public abstract class Uposlenik
     {
+
+        /*
         private string ime;
         private string prezime;
         private string email;
@@ -145,6 +148,24 @@ namespace Posta.Model
             this.Adresa = adresa;
             this.DatumRodjenja = datumRodjenja;
         }
+        */
+
+
+        [ScaffoldColumn(false)]
+        public string id { get; set; }
+        [Required]
+        public string ime { get; set; }
+        [Required]
+        public string prezime { get; set; }
+        [Required]
+        public string email { get; set; }
+        [Required]
+        public string password { get; set; }
+        public string adresa { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        [Required]
+        public string tipPosla { get; set; }
+
 
     }
 }

@@ -17,6 +17,7 @@ using System.ComponentModel;
 using Posta.Model;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Popups;
+using System.Threading.Tasks;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Posta.Forms
@@ -36,19 +37,19 @@ namespace Posta.Forms
             //hardkodirani
             if (ePosta.Instanca.SviPotrosaci.Count() == 0)
             {
-                Potrosac selma = new Model.Potrosac("Selma", "Vucijak", "062316446", "Logavina", "2307997175013", "selmav", "selma", DateTime.Today);
+              /*  Potrosac selma = new Model.Potrosac("Selma", "Vucijak", "062316446", "Logavina", "2307997175013", "selmav", "selma", DateTime.Today);
                 selma.DodajRacun(new Model.Racun(1, 1, true));
                 selma.DodajRacun(new Model.Racun(2, 2, false));
                 ePosta.Instanca.dodajPotrosaca(selma);
                 Potrosac faruk = new Model.Potrosac("F", "S", "365665", "Logavina", "12346789", "fsm", "etf", DateTime.Today);
                 faruk.DodajRacun(new Model.Racun(1, 1, true));
                 faruk.DodajRacun(new Model.Racun(2, 2, false));
-                ePosta.Instanca.dodajPotrosaca(faruk);
+                ePosta.Instanca.dodajPotrosaca(faruk);*/
             }
 
-            ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
+            /*ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
             ePosta.Instanca.dodajUposlenika(new Postar("faruks", "faruk"));
-            ePosta.Instanca.dodajUposlenika(new Administrator());
+            ePosta.Instanca.dodajUposlenika(new Administrator());*/
             this.DataContext = lvm;
             
         }
@@ -63,10 +64,12 @@ namespace Posta.Forms
             }
         }
 
-        private void bLogin_Click(object sender, RoutedEventArgs e)
+        private async void bLogin_Click(object sender, RoutedEventArgs e)
         {
-            var osobaP = lvm.validateP();
-            var osobaU = lvm.validateU();
+            var osobaP = await Task.Run(() => lvm.validateP());
+            //var osobaP = lvm.validateP();
+            //var osobaU = lvm.validateU();
+            var osobaU = await Task.Run(() => lvm.validateU());
             if(osobaP != null)
             {
                 //ulogovao potrosac

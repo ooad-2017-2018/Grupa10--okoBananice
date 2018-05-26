@@ -55,7 +55,7 @@ namespace Posta.Forms
             navigacija = parametri[1].ToString();
 
             prvm.Trenutni = trenutni;
-            prvm.Racuni = trenutni.SviRacuni;
+            //prvm.Racuni = trenutni.SviRacuni;
         }
 
         

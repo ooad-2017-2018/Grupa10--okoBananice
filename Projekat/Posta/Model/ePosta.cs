@@ -88,7 +88,7 @@ namespace Posta.Model
             Potrosac p = null;
             try
             {
-                p = SviPotrosaci.Find((Potrosac i) => i.JMBG1.Equals(jmbg));
+                //p = SviPotrosaci.Find((Potrosac i) => i.JMBG1.Equals(jmbg));
             }
             catch(Exception)
             {

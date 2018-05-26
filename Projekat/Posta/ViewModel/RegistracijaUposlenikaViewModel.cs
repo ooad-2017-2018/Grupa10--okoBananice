@@ -260,6 +260,7 @@ namespace Posta.ViewModel
         {
             try
             {
+                /*
                 BRegistracija = false;
                 Uposlenik dodaj = null;
                 if (Postar)
@@ -289,7 +290,7 @@ namespace Posta.ViewModel
                 {
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
                     msgDialog.ShowAsync();
-                }
+                }*/
             }
             catch(Exception e)
             {

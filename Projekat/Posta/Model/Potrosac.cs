@@ -1,13 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Posta.Model
 {
-    public class Potrosac : IPotrosac
+    public class Potrosac
     {
+        [ScaffoldColumn(false)]
+        public string id { get; set; }
+
+        [Required]
+        public string ime { get; set; }
+        [Required]
+        public string prezime { get; set; }
+        public string brojTelefona { get; set; }
+        public string adresa { get; set; }
+
+        [Required]
+        public string JMBG { get; set; }
+        [Required]
+        public string email { get; set; }
+        [Required]
+        public string password { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        public List<Racun> sviRacuni { get; set; }
+        public List<Paket> sviPaketi { get; set; }
+
+        /*
         private string ime;
         private string prezime;
         private string brojTelefona;
@@ -27,6 +49,7 @@ namespace Posta.Model
             SviRacuni = new List<Racun>();
         }
 
+        [ScaffoldColumn(false)]
         public string Ime
         {
             get
@@ -184,6 +207,6 @@ namespace Posta.Model
         public void SetujRacun(Racun r)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

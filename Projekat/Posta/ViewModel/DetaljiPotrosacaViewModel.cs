@@ -24,13 +24,13 @@ namespace Posta.ViewModel
         public void popuni()
         {
             if (trenutni != null)
-            {
+            {/*
                 Ime = trenutni.Ime;
                 Prezime = trenutni.Prezime;
                 Adresa = trenutni.Adresa;
                 Email = trenutni.Email;
                 Jmbg = trenutni.JMBG1;
-                BrojTelefona = trenutni.BrojTelefona;
+                BrojTelefona = trenutni.BrojTelefona;*/
             }
         }
 

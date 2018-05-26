@@ -201,14 +201,14 @@ namespace Posta.ViewModel
         {
             try
             {
-                BRegistracija = false;
+                /*BRegistracija = false;
                 Potrosac novi = new Potrosac(Ime, Prezime, BrojTelefona, Adresa, Jmbg, Email, Password, DatumRodjenja);
                 bool result = await Task.Run(() => Baza.Instanca.dodajPotrosaca(novi));
                 if (result)
                 {
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
                     msgDialog.ShowAsync();
-                }
+                }*/
             }
             catch(Exception ex)
             {

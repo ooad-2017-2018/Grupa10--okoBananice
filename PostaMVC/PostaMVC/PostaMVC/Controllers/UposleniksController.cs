@@ -36,6 +36,17 @@ namespace PostaMVC.Controllers
             return View(uposlenik);
         }
 
+        [HttpGet]
+        public JsonResult GetAccount(string email, string password)
+        {
+            Uposlenik u = db.Uposlenik.OfType<Uposlenik>().SingleOrDefault(s => s.email == email && s.password == password);
+
+            if (u == null)
+                return Json(0, JsonRequestBehavior.AllowGet);
+
+            return Json(u, JsonRequestBehavior.AllowGet);
+        }
+
         // GET: Uposleniks/Create
         public ActionResult Create()
         {

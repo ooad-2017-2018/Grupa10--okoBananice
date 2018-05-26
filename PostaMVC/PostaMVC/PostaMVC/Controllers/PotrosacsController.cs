@@ -36,6 +36,18 @@ namespace PostaMVC.Controllers
             return View(potrosac);
         }
 
+        [HttpGet]
+        public JsonResult GetAccount(string email, string password)
+        {
+            Potrosac p = db.Potrosac.OfType<Potrosac>().SingleOrDefault(s => s.email == email && s.password == password);
+
+            if (p == null)
+                return Json(0, JsonRequestBehavior.AllowGet);
+
+            return Json(p, JsonRequestBehavior.AllowGet);
+        }
+
+
         // GET: Potrosacs/Create
         public ActionResult Create()
         {
