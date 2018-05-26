@@ -9,17 +9,10 @@ namespace Posta.Model
     public class Administrator : Uposlenik
     {   public Administrator()
         {
-           /* Ime = "Coko";
-            Prezime = "Bananice";
-            Email = "fsmajlovic1";
-            Password = "etf";*/
+
         }
         
         public void ProvjeriStanja()
-        {
-
-        }
-        public void BrisiPotrosaca(Potrosac p)
         {
 
         }

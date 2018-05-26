@@ -145,9 +145,9 @@ namespace Posta.ViewModel
                 httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
 
                 string json = httpResponseBody;
-                //novi = JsonConvert.DeserializeObject<Uposlenik>(json);
-                if(json.Contains("Salterusa")) novi = JsonConvert.DeserializeObject<Salterusa>(json);
-                else if(json.Contains("Postar")) novi = JsonConvert.DeserializeObject<Postar>(json);
+                if (json.Contains("Salterusa")) novi = JsonConvert.DeserializeObject<Salterusa>(json);
+                else if (json.Contains("Postar")) novi = JsonConvert.DeserializeObject<Postar>(json);
+                else if (json.Contains("Administrator")) novi = JsonConvert.DeserializeObject<Administrator>(json);
                 return novi;
 
             }

@@ -3,9 +3,11 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
+using Windows.Web.Http;
 
 namespace Posta.Model
 {
@@ -32,7 +34,31 @@ namespace Posta.Model
         IMobileServiceTable<Uposlenici> tabelaUposlenici = App.MobileService.GetTable<Uposlenici>();
         
         public async Task<bool> dodajPotrosaca(Potrosac p)
-        {/*
+        {
+            /*
+            var values = new Dictionary<string, string>
+            {
+                { "Ime", p.ime },
+                { "Prezime", p.prezime },
+                {"Email", p.email },
+                {"Password", p.password },
+                {"BrojTelefona", p.brojTelefona },
+                {"Adresa", p.adresa },
+                {"JMBG", p.JMBG },
+                {"DatumRodjenja", p.datumRodjenja.ToString() },
+            };
+
+            System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
+            
+            var response = await client.PostAsync("http://localhost:50180/Potrosacs/Create", content);*/
+
+            /*var content = new FormUrlEncodedContent(values);
+
+var response = await client.PostAsync("http://www.example.com/recepticle.aspx", content);
+
+var responseString = await response.Content.ReadAsStringAsync();*/
+            
+            /*
             try
             {
                 Potrosaci obj = new Potrosaci();

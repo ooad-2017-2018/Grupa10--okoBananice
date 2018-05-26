@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using Posta.Model;
 using PostaMVC.Models;
+using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace PostaMVC.Controllers
 {
@@ -70,6 +72,7 @@ namespace PostaMVC.Controllers
 
             return View(potrosac);
         }
+
 
         // GET: Potrosacs/Edit/5
         public ActionResult Edit(string id)
