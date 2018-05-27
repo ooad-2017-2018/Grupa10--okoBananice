@@ -85,7 +85,7 @@ namespace Posta.ViewModel
         }
 
         
-        private async void obrisiPotrosaca()
+  /*      private async void obrisiPotrosaca()
         {
             bool flag = await Task.Run(() => Baza.Instanca.obrisiPotrosaca(Jmbg));
 
@@ -120,12 +120,12 @@ namespace Posta.ViewModel
                 var dialog1 = new MessageDialog("Nije obrisan potrosac.");
                 dialog1.ShowAsync();
             }*/
-        }
-
-        public ICommand ObrisiPotrosacaCommand
+      //  }
+    
+       /* public ICommand ObrisiPotrosacaCommand
         {
             get { return new CommandHandler(() => this.obrisiPotrosaca()); }
-        }
+        }*/
         
         public async void pretraga()
         {

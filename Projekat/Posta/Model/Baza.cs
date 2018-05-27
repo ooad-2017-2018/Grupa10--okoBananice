@@ -1,4 +1,5 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -102,7 +103,76 @@ var responseString = await response.Content.ReadAsStringAsync();*/
         }
 
         public async Task<Potrosac> dajPotrosaca(string jmbg)
+       
         {
+            Windows.Web.Http.HttpClient httpClient = new Windows.Web.Http.HttpClient();
+
+            var headers = httpClient.DefaultRequestHeaders;
+
+            string header = "ie";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            header = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            string url = "http://localhost:50180/Potrosacs/GetJMBG?JMBG=" + jmbg;
+            //Uri requestUri = new Uri("http://localhost:50180/Potrosacs/GetAccount?Email" + EMail + "&password=" + Pass);
+            Uri requestUri = new Uri(url);
+            Windows.Web.Http.HttpResponseMessage httpResponse = new Windows.Web.Http.HttpResponseMessage();
+
+            Potrosac novi = null;
+
+            string httpResponseBody = "";
+            try
+            {
+                httpResponse = await httpClient.GetAsync(requestUri);
+
+                httpResponse.EnsureSuccessStatusCode();
+                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
+
+                string json = httpResponseBody;
+                novi = JsonConvert.DeserializeObject<Potrosac>(json);
+
+                return novi;
+
+            }
+            catch (Exception ex)
+            {
+                httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
+
+            }
+            return null;
+        
+        /*try
+        {
+            Trazeni = null;
+            Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
+
+            if (Trazeni != null)
+            {
+                Found = true;
+                var dialog = new MessageDialog("Uspjesno pronadjen potrosac!");
+                await dialog.ShowAsync();
+            }
+            else
+            {
+                Found = false;
+                var dialog = new MessageDialog("Nije pronadjen potrosac.");
+                await dialog.ShowAsync();
+            }
+        }
+        catch(Exception)
+        {
+
+        }*/
+
+    }
         /*
             items = new List<Potrosaci>();
             items.AddRange(await tabelaPotrosaci.Where(i => i.Jmbg == jmbg).ToListAsync());
@@ -122,13 +192,13 @@ var responseString = await response.Content.ReadAsStringAsync();*/
             {
                 
             }*/
-            return null;
+           
         }
         
         
-        public async Task<bool> obrisiPotrosaca(string jmbg)
+       /* public async Task<bool> obrisiPotrosaca(string jmbg)
         {
-        /*
+        
             try
             {
                 List<Potrosaci> temp = new List<Potrosaci>();
@@ -140,9 +210,8 @@ var responseString = await response.Content.ReadAsStringAsync();*/
             catch(Exception)
             {
                 return false;
-            }*/
+            }
         return false;
-        } 
+        } */
         
     }
-}

@@ -50,6 +50,18 @@ namespace PostaMVC.Controllers
         }
 
 
+        [HttpGet]
+        public JsonResult GetJMBG(string JMBG)
+        {
+            Potrosac p = db.Potrosac.OfType<Potrosac>().SingleOrDefault(s => s.JMBG == JMBG);
+
+            if (p == null)
+            {
+
+                return Json(0, JsonRequestBehavior.AllowGet);
+            }
+            return Json(p, JsonRequestBehavior.AllowGet);
+        }
         // GET: Potrosacs/Create
         public ActionResult Create()
         {
