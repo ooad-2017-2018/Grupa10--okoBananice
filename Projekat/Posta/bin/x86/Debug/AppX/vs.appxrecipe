@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-27T23:26:57.205</Modified>
+      <Modified>2018-05-28T15:39:08.191</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.exe">
       <PackagePath>entrypoint\Posta.exe</PackagePath>
-      <Modified>2018-05-27T23:26:56.400</Modified>
+      <Modified>2018-05-28T15:39:06.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\.nuget\packages\Microsoft.Azure.Mobile.Client\3.1.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
@@ -470,117 +470,117 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m1.png">
       <PackagePath>View\Slike\Markice\m1.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.031</Modified>
+      <Modified>2018-05-28T15:20:20.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m2.png">
       <PackagePath>View\Slike\Markice\m2.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.036</Modified>
+      <Modified>2018-05-28T15:20:20.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m3.png">
       <PackagePath>View\Slike\Markice\m3.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.044</Modified>
+      <Modified>2018-05-28T15:20:20.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m4.png">
       <PackagePath>View\Slike\Markice\m4.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.050</Modified>
+      <Modified>2018-05-28T15:20:20.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m5.png">
       <PackagePath>View\Slike\Markice\m5.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.055</Modified>
+      <Modified>2018-05-28T15:20:20.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m6.png">
       <PackagePath>View\Slike\Markice\m6.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.064</Modified>
+      <Modified>2018-05-28T15:20:20.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m7.png">
       <PackagePath>View\Slike\Markice\m7.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.072</Modified>
+      <Modified>2018-05-28T15:20:20.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m8.png">
       <PackagePath>View\Slike\Markice\m8.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.079</Modified>
+      <Modified>2018-05-28T15:20:20.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Markice\m9.png">
       <PackagePath>View\Slike\Markice\m9.png</PackagePath>
-      <Modified>2018-05-26T12:50:26.086</Modified>
+      <Modified>2018-05-28T15:20:20.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-05-26T12:50:25.846</Modified>
+      <Modified>2018-05-28T15:20:18.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.849</Modified>
+      <Modified>2018-05-28T15:20:18.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.866</Modified>
+      <Modified>2018-05-28T15:20:18.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.869</Modified>
+      <Modified>2018-05-28T15:20:18.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.872</Modified>
+      <Modified>2018-05-28T15:20:18.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.874</Modified>
+      <Modified>2018-05-28T15:20:18.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T12:50:25.877</Modified>
+      <Modified>2018-05-28T15:20:18.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r1.jpg">
       <PackagePath>View\Slike\Razglednice\r1.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.092</Modified>
+      <Modified>2018-05-28T15:20:20.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r2.jpg">
       <PackagePath>View\Slike\Razglednice\r2.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.097</Modified>
+      <Modified>2018-05-28T15:20:20.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r3.jpg">
       <PackagePath>View\Slike\Razglednice\r3.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.101</Modified>
+      <Modified>2018-05-28T15:20:21.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r4.jpg">
       <PackagePath>View\Slike\Razglednice\r4.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.109</Modified>
+      <Modified>2018-05-28T15:20:21.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r5.jpg">
       <PackagePath>View\Slike\Razglednice\r5.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.114</Modified>
+      <Modified>2018-05-28T15:20:21.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r6.jpg">
       <PackagePath>View\Slike\Razglednice\r6.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.119</Modified>
+      <Modified>2018-05-28T15:20:21.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r7.jpg">
       <PackagePath>View\Slike\Razglednice\r7.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.122</Modified>
+      <Modified>2018-05-28T15:20:21.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r8.jpg">
       <PackagePath>View\Slike\Razglednice\r8.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.125</Modified>
+      <Modified>2018-05-28T15:20:21.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\View\Slike\Razglednice\r9.jpg">
       <PackagePath>View\Slike\Razglednice\r9.jpg</PackagePath>
-      <Modified>2018-05-26T12:50:26.130</Modified>
+      <Modified>2018-05-28T15:20:21.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-05-26T12:50:25.942</Modified>
+      <Modified>2018-05-28T15:20:19.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Posta.xr.xml">
       <PackagePath>Posta.xr.xml</PackagePath>
-      <Modified>2018-05-26T12:50:30.050</Modified>
+      <Modified>2018-05-28T15:39:05.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -589,11 +589,11 @@
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T13:45:14.175</Modified>
+      <Modified>2018-05-28T15:39:07.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\spahi\Desktop\Grupa10-CokoBananice\Projekat\Posta\bin\x86\Debug\Core\Posta.exe">
       <PackagePath>Posta.exe</PackagePath>
-      <Modified>2018-05-27T23:26:57.199</Modified>
+      <Modified>2018-05-28T15:39:08.187</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

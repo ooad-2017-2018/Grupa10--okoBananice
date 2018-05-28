@@ -133,7 +133,8 @@ namespace Posta.ViewModel
             {
                 Trazeni = null;
                 Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
-                
+               // var dialog1 = new MessageDialog(Trazeni.ime);
+               // await dialog1.ShowAsync();
                 if (Trazeni != null)
                 {
                     Found = true;
