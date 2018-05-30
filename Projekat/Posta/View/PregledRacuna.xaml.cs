@@ -30,8 +30,7 @@ namespace Posta.Forms
         ObservableCollection<Racun> racuni;
         private PregledRacunaViewModel prvm;
         private string navigacija;
-
-        //probaj bez ovoga
+        /*
         public ObservableCollection<Racun> Racuni
         {
             get
@@ -44,7 +43,7 @@ namespace Posta.Forms
                 racuni = value;
                 OnPropertyChanged("Racuni");
             }
-        }
+        }*/
         
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -55,7 +54,7 @@ namespace Posta.Forms
             navigacija = parametri[1].ToString();
 
             prvm.Trenutni = trenutni;
-            //prvm.Racuni = trenutni.SviRacuni;
+            prvm.Racuni = trenutni.sviRacuni;
         }
 
         

@@ -37,6 +37,14 @@ namespace PostaMVC.Controllers
         }
 
         [HttpGet]
+        public JsonResult GetSve()
+        {
+            List<Uposlenik> listaSvih = db.Uposlenik.ToList();
+            if (listaSvih == null) return Json(0, JsonRequestBehavior.AllowGet);
+            return Json(listaSvih, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
         public JsonResult GetAccount(string email, string password)
         {
             Uposlenik u = db.Uposlenik.OfType<Uposlenik>().SingleOrDefault(s => s.email == email && s.password == password);

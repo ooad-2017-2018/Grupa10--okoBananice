@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -46,5 +47,25 @@ namespace Posta.Forms
             Frame.Navigate(typeof(LogIn), this.DataContext);
         }
 
+        private void bNaplataRacuna_Click(object sender, RoutedEventArgs e)
+        {
+            Potrosac p = ePosta.Instanca.dajPotrosaca(textBox.Text.ToString());
+            if (p != null)
+            {
+                List<object> parametri = new List<object> { trenutni, p };
+                this.Frame.Navigate(typeof(NaplataRacuna), parametri);
+            }
+            else
+            {
+                var dialog = new MessageDialog("Potrosac nije pronadjen!");
+                dialog.ShowAsync();
+            }
+        }
+
+
+        private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

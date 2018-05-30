@@ -29,6 +29,31 @@ namespace Posta.Model
         public List<Racun> sviRacuni { get; set; }
         public List<Paket> sviPaketi { get; set; }
 
+        public Potrosac()
+        {
+            sviRacuni = new List<Racun>();
+            sviPaketi = new List<Paket>();
+        }
+
+        public Potrosac(string ime, string prezime, string brojTelefona, string adresa, string jMBG, string email, string password, DateTime datumRodjenja)
+        {
+            this.ime = ime;
+            this.prezime = prezime;
+            this.brojTelefona = brojTelefona;
+            this.adresa = adresa;
+            this.JMBG = jMBG;
+            this.email = email;
+            this.password = password;
+            this.datumRodjenja = datumRodjenja;
+            sviRacuni = new List<Racun>();
+            sviPaketi = new List<Paket>();
+        }
+
+        public void DodajRacun(Racun r)
+        {
+            sviRacuni.Add(r);
+        }
+
         /*
         private string ime;
         private string prezime;
@@ -182,19 +207,6 @@ namespace Posta.Model
 
         public Potrosac()
         {
-            SviRacuni = new List<Racun>();
-            SviPaketi = new List<Paket>();
-        }
-        public Potrosac(string ime, string prezime, string brojTelefona, string adresa, string jMBG, string email, string password, DateTime datumRodjenja)
-        {
-            this.Ime = ime;
-            this.Prezime = prezime;
-            this.BrojTelefona = brojTelefona;
-            this.Adresa = adresa;
-            JMBG1 = jMBG;
-            this.Email = email;
-            this.Password = password;
-            this.DatumRodjenja = datumRodjenja;
             SviRacuni = new List<Racun>();
             SviPaketi = new List<Paket>();
         }

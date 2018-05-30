@@ -33,26 +33,10 @@ namespace Posta.ViewModel
         private string tipPosla;
         private bool postar;
         private bool salter;
-        private bool bRegistracija;
+        
 
         #region GetteriSetteri
-
-        public bool BRegistracija
-        {
-            get
-            {
-                return bRegistracija;
-            }
-
-            set
-            {
-                bRegistracija = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(BRegistracija)));
-                }
-            }
-        }
+        
 
         public string ImeU
         {
@@ -252,7 +236,7 @@ namespace Posta.ViewModel
             datumRodjenja = DateTime.Now;
             tipPosla = "";
             pass = "";
-            BRegistracija = true;
+            
         }
         
 
@@ -260,44 +244,44 @@ namespace Posta.ViewModel
         {
             try
             {
-                /*
-                BRegistracija = false;
+                
                 Uposlenik dodaj = null;
                 if (Postar)
                 {
                     dodaj = new Postar();
-                    dodaj.TipPosla = "Postar";
+                    dodaj.tipPosla = "Postar";
                 }
                 else if (Salter)
                 {
                     dodaj = new Salterusa();
-                    dodaj.TipPosla = "Salterusa";
+                    dodaj.tipPosla = "Salterusa";
                 }
                 else
                 {
                     throw new Exception("Morate oznaciti tip posla!");
                 }
-                dodaj.Ime = ImeU;
-                dodaj.Prezime = PrezimeU;
-                dodaj.Password = Pass;
-                dodaj.Email = EmailU;
-                dodaj.Adresa = AdresaU;
-                dodaj.DatumRodjenja = DatumRodjenja;
-                //ePosta.Instanca.dodajUposlenika(dodaj);
+                dodaj.ime = ImeU;
+                dodaj.prezime = PrezimeU;
+                dodaj.password = Pass;
+                dodaj.email = EmailU;
+                dodaj.adresa = AdresaU;
+                dodaj.datumRodjenja = DatumRodjenja;
+                bool result = ePosta.Instanca.dodajUposlenika(dodaj);
+
+                string poruka = "";
+
+                if (result) poruka = "Uspjesno ste unijeli novog uposlenika!";
+                else poruka = "Unos uposlenika nije uspio (greska u sistemu)";
+                MessageDialog msgDialog = new MessageDialog(poruka);
+                msgDialog.ShowAsync();
                 
-                bool result = await Task.Run(() => Baza.Instanca.dodajUposlenka(dodaj));
-                if (result)
-                {
-                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
-                    msgDialog.ShowAsync();
-                }*/
             }
             catch(Exception e)
             {
                 var message = new MessageDialog(e.Message);
                 message.ShowAsync();
             }
-            BRegistracija = true;
+            
         }
         
         public ICommand RegistrujUposlenikaCommand

@@ -150,7 +150,6 @@ namespace Posta.Model
         }
         */
 
-
         [ScaffoldColumn(false)]
         public string id { get; set; }
         [Required]
@@ -166,6 +165,15 @@ namespace Posta.Model
         [Required]
         public string tipPosla { get; set; }
 
+        public Uposlenik()
+        {
 
+        }
+
+        public Uposlenik(string e, string p)
+        {
+            email = e;
+            password = p;
+        }
     }
 }

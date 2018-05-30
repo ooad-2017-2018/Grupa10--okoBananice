@@ -9,22 +9,24 @@ namespace Posta.Model
     public class Salterusa : Uposlenik
     {
         /*
-        public Salterusa() : base ()
-        {
-
-        }
-
         public Salterusa(string ime, string prezime, string email, string password, string adresa, DateTime datumRodjenja) : base(ime, prezime, email, password, adresa, datumRodjenja)
         {
 
         }
 
-        public Salterusa(string e, string p) : base(e,p)
+        */
+        /*
+        public void DodajPotrosaca(Potrosac p)
         {
 
         }*/
 
-        public void DodajPotrosaca(Potrosac p)
+        public Salterusa() : base()
+        {
+
+        }
+
+        public Salterusa(string e, string p) : base(e, p)
         {
 
         }

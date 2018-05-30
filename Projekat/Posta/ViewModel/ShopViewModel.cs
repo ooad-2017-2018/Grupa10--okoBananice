@@ -4,6 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Windows.UI.Popups;
+
 
 namespace Posta.ViewModel
 {
@@ -287,8 +290,25 @@ namespace Posta.ViewModel
                 OnPropertyChanged("M91");
             }
         }
+
+
         #endregion
-        
+
+        private string adresa;
+
+        public string Adresa
+        {
+            get
+            {
+                return adresa;
+            }
+
+            set
+            {
+                adresa = value;
+                OnPropertyChanged("Adresa");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
@@ -301,7 +321,40 @@ namespace Posta.ViewModel
 
         public ShopViewModel()
         {
-            R91 = true;
+            R1 = R2 = R3 = R4 = R5 = R6 = R7 = R8 = R8 = false;
+            M1 = M2 = M3 = M4 = M5 = M6 = M7 = M8 = M9 = false;
+            Adresa = "";
+        }
+
+
+        public ICommand KupiCommand
+        {
+            get { return new CommandHandler(() => this.kupi()); }
+        }
+
+        private bool provjeriRazglednice()
+        {
+            List<bool> lista = new List<bool> { R1, R2, R3, R4, R5, R6, R7, R8, R9 };
+            foreach (bool i in lista) if (i) return i;
+            return false;
+        }
+
+        private bool provjeriMarkice()
+        {
+            List<bool> lista = new List<bool> { M1, M2, M3, M4, M5, M6, M7, M8, M9 };
+            foreach (bool i in lista) if (i) return i;
+            return false;
+        }
+
+        private void kupi()
+        {
+            string poruka = "";
+            if (Adresa == "") poruka = "Morate unijeti adresu!";
+           // else if (!provjeriRazglednice() || !provjeriMarkice()) poruka = "Morate oznaciti nesto!";
+            else poruka = "Kupovina uspjesna!";
+
+            var dialog = new MessageDialog(poruka);
+            dialog.ShowAsync();
         }
 
 

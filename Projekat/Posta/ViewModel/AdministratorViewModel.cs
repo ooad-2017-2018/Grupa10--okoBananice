@@ -84,48 +84,28 @@ namespace Posta.ViewModel
             }
         }
 
-        
-  /*      private async void obrisiPotrosaca()
+        private void obrisiPotrosaca()
         {
-            bool flag = await Task.Run(() => Baza.Instanca.obrisiPotrosaca(Jmbg));
-
-            if (flag)
+            string poruka = "";
+            if (ePosta.Instanca.obrisiPotrosaca(Jmbg))
             {
                 Found = false;
                 Trazeni = null;
-                var dialog1 = new MessageDialog("Uspjesno izbrisan!");
-                dialog1.ShowAsync();
+                poruka = "Potrosac uspjesno obrisan!";
             }
             else
             {
-                var dialog1 = new MessageDialog("Nije obrisan potrosac.");
-                dialog1.ShowAsync();
+                poruka = "Potrosac nije obrisan (greska u sistemu)";
             }
 
-            //Baza.Instanca.obrisiPotrosaca("123456789");
-            //Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
-            //ePosta.Instanca.obrisiPotrosaca(Trazeni);
-            /*
-            if (Trazeni != null)
-            {
-                Found = true;
-             
-                var dialog1 = new MessageDialog("Uspjesno izbrisan!");
-                
-                dialog1.ShowAsync();
-            }
-            else
-            {
-                Found = false;
-                var dialog1 = new MessageDialog("Nije obrisan potrosac.");
-                dialog1.ShowAsync();
-            }*/
-      //  }
-    
-       /* public ICommand ObrisiPotrosacaCommand
+            var dialog = new MessageDialog(poruka);
+            dialog.ShowAsync();
+        }
+
+        public ICommand ObrisiPotrosacaCommand
         {
             get { return new CommandHandler(() => this.obrisiPotrosaca()); }
-        }*/
+        }
         
         public async void pretraga()
         {
@@ -133,8 +113,7 @@ namespace Posta.ViewModel
             {
                 Trazeni = null;
                 Trazeni = await Task.Run(() => Baza.Instanca.dajPotrosaca(Jmbg));
-               // var dialog1 = new MessageDialog(Trazeni.ime);
-               // await dialog1.ShowAsync();
+                provjeri();
                 if (Trazeni != null)
                 {
                     Found = true;
@@ -155,7 +134,14 @@ namespace Posta.ViewModel
                 
         }
 
-
+        private void provjeri()
+        {
+            if(Trazeni == null)
+            {
+                Trazeni = ePosta.Instanca.dajPotrosaca(Jmbg);
+            }
+            if(ePosta.Instanca.obrisan(Trazeni)) Trazeni = null;
+        }
 
 
     }

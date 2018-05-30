@@ -35,12 +35,12 @@ namespace Posta.Forms
             this.DataContext = avm;
         }
 
-        /*protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             this.DataContext = avm;
             avm.Found = false;
-        }*/
+        }
 
 
         private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)

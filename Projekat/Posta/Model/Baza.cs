@@ -34,6 +34,95 @@ namespace Posta.Model
         IMobileServiceTable<Potrosaci> tabelaPotrosaci = App.MobileService.GetTable<Potrosaci>();
         IMobileServiceTable<Uposlenici> tabelaUposlenici = App.MobileService.GetTable<Uposlenici>();
         
+        public async Task<List<Uposlenik>> dajSveUposlenike()
+        {
+            Windows.Web.Http.HttpClient httpClient = new Windows.Web.Http.HttpClient();
+
+            var headers = httpClient.DefaultRequestHeaders;
+
+            string header = "ie";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            header = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            string url = "http://localhost:50180/Uposleniks/GetSve";
+            Uri requestUri = new Uri(url);
+            Windows.Web.Http.HttpResponseMessage httpResponse = new Windows.Web.Http.HttpResponseMessage();
+            
+            string httpResponseBody = "";
+            try
+            {
+                httpResponse = await httpClient.GetAsync(requestUri);
+
+                httpResponse.EnsureSuccessStatusCode();
+                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
+
+                string json = httpResponseBody;
+                
+                JsonConverter[] converters = { new UposlenikConverter() };
+                var test = JsonConvert.DeserializeObject<List<Uposlenik>>(json, new JsonSerializerSettings() { Converters = converters });
+
+                return test;
+            }
+            catch (Exception ex)
+            {
+                httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
+
+            }
+            return null;
+        }
+
+        public async Task<List<Potrosac>> dajSvePotrosace()
+        {
+            Windows.Web.Http.HttpClient httpClient = new Windows.Web.Http.HttpClient();
+
+            var headers = httpClient.DefaultRequestHeaders;
+
+            string header = "ie";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            header = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
+            if (!headers.UserAgent.TryParseAdd(header))
+            {
+                throw new Exception("Invalid header value: " + header);
+            }
+
+            string url = "http://localhost:50180/Potrosacs/GetSve";
+            Uri requestUri = new Uri(url);
+            Windows.Web.Http.HttpResponseMessage httpResponse = new Windows.Web.Http.HttpResponseMessage();
+
+            
+            string httpResponseBody = "";
+            try
+            {
+                httpResponse = await httpClient.GetAsync(requestUri);
+
+                httpResponse.EnsureSuccessStatusCode();
+                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
+
+                string json = httpResponseBody;
+
+                var test = JsonConvert.DeserializeObject<List<Potrosac>>(json);
+                return test;
+            }
+            catch (Exception ex)
+            {
+                httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
+
+            }
+            return null;
+        }
+
         public async Task<bool> dodajPotrosaca(Potrosac p)
         {
             /*

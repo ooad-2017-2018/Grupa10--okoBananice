@@ -29,8 +29,12 @@ namespace Posta.Forms
     {
         public LoginViewModel lvm { get; set; } = new LoginViewModel();
 
-        
-       
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            ePosta ep = ePosta.Instanca;
+        }
+
+
         public LogIn()
         {
             this.InitializeComponent();
@@ -45,8 +49,10 @@ namespace Posta.Forms
                 faruk.DodajRacun(new Model.Racun(1, 1, true));
                 faruk.DodajRacun(new Model.Racun(2, 2, false));
                 ePosta.Instanca.dodajPotrosaca(faruk);*/
+               
             }
 
+            
             /*ePosta.Instanca.dodajUposlenika(new Salterusa("ilmas", "ilma"));
             ePosta.Instanca.dodajUposlenika(new Postar("faruks", "faruk"));
             ePosta.Instanca.dodajUposlenika(new Administrator());*/
@@ -73,8 +79,15 @@ namespace Posta.Forms
             if(osobaP != null)
             {
                 //ulogovao potrosac
-                porukaGreske.Visibility = Visibility.Collapsed;
-                GlavniFrame.Navigate(typeof(OpcijePotrosaca), osobaP);
+                if (!provjeriPotrosaca(osobaP))
+                {
+                    porukaGreske.Visibility = Visibility.Collapsed;
+                    GlavniFrame.Navigate(typeof(OpcijePotrosaca), osobaP);
+                }
+                else
+                {
+                    porukaGreske.Visibility = Visibility.Visible;
+                }
             }
             else
             {
@@ -95,7 +108,15 @@ namespace Posta.Forms
                 }
             }
         }
+
+        private bool provjeriPotrosaca(Potrosac p)
+        {
+            Potrosac pomocni = ePosta.Instanca.dajPotrosaca(p.JMBG);
+            if (pomocni == null) return true;
+            return false;
+        }
         
+
         private void bRegistrujSe_Click(object sender, RoutedEventArgs e)
         {
             GlavniFrame.Navigate(typeof(RegistracijaUposlenika), this.DataContext);

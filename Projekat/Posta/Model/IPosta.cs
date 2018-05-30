@@ -11,6 +11,6 @@ namespace Posta.Model
         void dodajPaket(Paket p);
         Potrosac dajPotrosaca(string jmbg);
         void dodajPotrosaca(Potrosac p);
-        void dodajUposlenika(Uposlenik u);
+        bool dodajUposlenika(Uposlenik u);
     }
 }

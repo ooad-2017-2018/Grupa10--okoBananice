@@ -108,6 +108,10 @@ namespace Posta.ViewModel
                 httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
 
             }
+            if(novi == null)
+            {
+                novi = ePosta.Instanca.dajPotrosacaPoMailu(EMail,Pass);
+            }
             return novi;
         }
 
@@ -148,15 +152,18 @@ namespace Posta.ViewModel
                 if (json.Contains("Salterusa")) novi = JsonConvert.DeserializeObject<Salterusa>(json);
                 else if (json.Contains("Postar")) novi = JsonConvert.DeserializeObject<Postar>(json);
                 else if (json.Contains("Administrator")) novi = JsonConvert.DeserializeObject<Administrator>(json);
-                return novi;
-
+                
             }
             catch (Exception ex)
             {
                 httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
 
             }
-            return null;
+            if(novi == null)
+            {
+                novi = ePosta.Instanca.dajUposlenikaPoMailu(EMail, Pass);
+            }
+            return novi;
         }
     }
 }

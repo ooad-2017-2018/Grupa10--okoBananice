@@ -11,18 +11,19 @@
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="Racuni" />
     <RootPropertyPathName Name="RegistrujPotrosacaCommand" />
-    <RootPropertyPathName Name="BRegistracija" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="Pass" />
     <RootPropertyPathName Name="Salter" />
     <RootPropertyPathName Name="Postar" />
     <RootPropertyPathName Name="RegistrujUposlenikaCommand" />
+    <RootPropertyPathName Name="BRegistracija" />
     <RootPropertyPathName Name="AdresaU" />
     <RootPropertyPathName Name="EmailU" />
     <RootPropertyPathName Name="PrezimeU" />
     <RootPropertyPathName Name="ImeU" />
     <RootPropertyPathName Name="EMail" />
+    <RootPropertyPathName Name="KupiCommand" />
     <RootPropertyPathName Name="R91" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -107,12 +108,13 @@
     </RootType>
     <RootType FullName="Posta.Forms.DetaljiPotrosaca" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
+      <RootEvent Name="DoubleTapped" />
     </RootType>
     <RootType FullName="Posta.Forms.NaplataRacuna" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">

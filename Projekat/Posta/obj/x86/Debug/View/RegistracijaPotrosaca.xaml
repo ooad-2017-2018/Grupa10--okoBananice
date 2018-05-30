@@ -44,7 +44,7 @@
         <TextBox x:ConnectionId='14' x:Name="tbEmail" Text="{Binding Path=Email,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
         <TextBox x:ConnectionId='15' x:Name="tbPass" Text="{Binding Path=Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
         <CalendarDatePicker x:ConnectionId='16' x:Name="kalendar" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="160"                                             />
-        <Button x:ConnectionId='17' x:Name="bReg"  Command="{Binding RegistrujPotrosacaCommand}" IsEnabled="{Binding BRegistracija,Mode=TwoWay}" Content="Registracija" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="160"/>
+        <Button x:ConnectionId='17' x:Name="bReg"  Command="{Binding RegistrujPotrosacaCommand}" Content="Registracija" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="160"/>
         <Button x:ConnectionId='18' x:Name="bNazad" Content="Nazad" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,22" Grid.Row="9" VerticalAlignment="Bottom" Width="100"                     />
     </Grid>
 </Page>

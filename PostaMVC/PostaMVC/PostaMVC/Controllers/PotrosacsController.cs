@@ -39,6 +39,14 @@ namespace PostaMVC.Controllers
         }
 
         [HttpGet]
+        public JsonResult GetSve()
+        {
+            List<Potrosac> listaSvih = db.Potrosac.ToList();
+            if (listaSvih == null) return Json(0, JsonRequestBehavior.AllowGet);
+            return Json(listaSvih, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
         public JsonResult GetAccount(string email, string password)
         {
             Potrosac p = db.Potrosac.OfType<Potrosac>().SingleOrDefault(s => s.email == email && s.password == password);

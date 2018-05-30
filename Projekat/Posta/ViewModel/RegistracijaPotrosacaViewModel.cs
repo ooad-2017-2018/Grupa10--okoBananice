@@ -25,7 +25,6 @@ namespace Posta.ViewModel
         public RegistracijaPotrosacaViewModel()
         {
             ime = prezime = jmbg = brojTelefona = adresa = email = password = "";
-            BRegistracija = true;
         }
         #region Atributi_Properties
         private string ime;
@@ -36,25 +35,7 @@ namespace Posta.ViewModel
         private string adresa;
         private string email;
         private string password;
-        private bool bRegistracija;
-
-        public bool BRegistracija
-        {
-            get
-            {
-                return bRegistracija;
-            }
-
-            set
-            {
-                bRegistracija = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(BRegistracija)));
-                }
-            }
-        }
-
+        
         public string Ime
         {
             get
@@ -197,25 +178,22 @@ namespace Posta.ViewModel
             get { return new CommandHandler(() => this.registrujPotrosaca()); }
         }
 
-        private async void registrujPotrosaca()
+        private void registrujPotrosaca()
         {
             try
             {
-                /*BRegistracija = false;
                 Potrosac novi = new Potrosac(Ime, Prezime, BrojTelefona, Adresa, Jmbg, Email, Password, DatumRodjenja);
-                bool result = await Task.Run(() => Baza.Instanca.dodajPotrosaca(novi));
-                if (result)
-                {
-                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
-                    msgDialog.ShowAsync();
-                }*/
+                ePosta.Instanca.dodajPotrosaca(novi);
+                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog potrosaca.");
+                msgDialog.ShowAsync();
+                
             }
             catch(Exception ex)
             {
                 var msg = new MessageDialog(ex.Message);
                 msg.ShowAsync();
             }
-            BRegistracija = true;
+            
         }
     }
 }

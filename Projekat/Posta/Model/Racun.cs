@@ -91,7 +91,7 @@ namespace Posta.Model
 
         public void PostaviPlacen()
         {
-            throw new NotImplementedException();
+            stanje = true;
         }
     }
 }

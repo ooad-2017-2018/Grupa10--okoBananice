@@ -15,12 +15,13 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="219*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="220*"/>
         </Grid.RowDefinitions>
-        <Button x:ConnectionId='1' x:Name="button" Content="Nazad" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" Height="46" Width="62"/>
-        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="31,42,0,0" TextWrapping="Wrap" Text="Racuni:" VerticalAlignment="Top" Height="20" Width="125" Grid.Column="1"/>
-        <ListView x:ConnectionId='3' x:Name="listView" HorizontalAlignment="Left" Height="451" Margin="16,33.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="211" Grid.Column="1"/>
+        <Button x:ConnectionId='1' x:Name="button" Content="Nazad" HorizontalAlignment="Left" Margin="14,9,0,0" VerticalAlignment="Top" Height="32" Width="86"                      Grid.Row="1"/>
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="16,15,0,0" TextWrapping="Wrap" Text="Racuni:" VerticalAlignment="Top"  Height="20" Width="125" Grid.Column="1" Grid.Row="1"/>
+        <ListView x:ConnectionId='3' x:Name="listView" Margin="16,7.667,13,76" Grid.Row="2" Grid.Column="1"                                     />
 
     </Grid>
 </Page>
