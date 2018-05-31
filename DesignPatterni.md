@@ -31,3 +31,16 @@ Ovaj patter nismo koristili u nasem projektu, ali smo ga mogli koristiti priliko
 Interpreter pattern služi za evaluiranje gramatike nekog jezika i jezickih izraza. 
 Obicno se koriste TeminalExpression i CompoundExpression klase koje služe za rekurzivno rješavanje problema interpretacije nekog jezickog izraza gdje je CompoundExpression neki dio pravila koji poziva drugo pravilo za obradu izraza, dok je TerminalExpression bazni slucaj za neko pravilo.
 Nismo koristili ovaj pattern u nasem projektu. Mozemo ga iskoristiti za provjeravanje validnosti JMBG broja i datuma rodjenja, ili provjere duzine passworda.
+
+#7. Adapter Pattern
+Osnovna namjena Adapter paterna je da omoguæi širu upotrebu veæ postojeæih klasa. Adapter patern kreira novu adapter klasu koja služi kao posrednik izmeðu
+originalne klase i željenog interfejsa.  Tim postupkom se dobija željena funkcionalnost bez izmjena na originalnoj klasi i bez ugrožavanja integriteta cijele aplikacije.
+Nismo koristili ovaj pattern unutar našeg projekta zbog veæ dobro osmišljenih klasa koje ne zahtijevaju promjene.
+
+#8. Proxy Pattern
+Namjena Proxy paterna je da omoguæi pristup i kontrolu pristupa stvarnim objektima. Proxy je obièno mali javni surogat objekat koji predstavlja kompleksni objekat èija aktivizacija se postiže na osnovu
+postavljenih pravila. Proxy patern rješava probleme kada se objekt ne može instancirati direktno.  Ovaj pattern nije iskoristen, ali se mogao iskoristiti za restrikciju brisanja potrošaèa svima osim administratoru sistema.
+
+#9. Bridge Pattern
+Osnovna namjena Bridge paterna je da omoguæi odvajanje apstrakcije i implementacije neke klase tako da ta klasa može posjedovati više razlièitih apstrakcija i više razlièitih implementacija za pojedine
+apstrakcije. Nismo koristili ovaj patter unutar našeg projekta, ali smo ga mogli iskoristiti za razmjenu poruka izmeðu korisnika i sistema.
